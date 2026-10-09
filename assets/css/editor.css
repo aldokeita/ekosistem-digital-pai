@@ -1,0 +1,110 @@
+/* Mode edit ala PowerPoint */
+
+/* kata yang diwarnai biru lewat tombol "Biru" */
+.slide p em, .slide li em, .slide span em, .slide dd em, .slide b em { font-style: normal; color: var(--blue); }
+.slide.deep p em, .slide.deep li em, .slide.deep span em, .slide .panel em { color: var(--sky); }
+
+/* teks yang dikosongkan lewat mode edit: hilang saat presentasi, tetap bisa diisi saat mode edit */
+body:not(.editing) .ek-empty { display: none !important; }
+body.editing .ek-empty { min-width: 120px; min-height: 1em; outline: 3px dashed rgba(31,91,255,.35) !important; }
+
+/* tombol mengambang */
+#editFab {
+  position: fixed; left: 16px; bottom: 16px; z-index: 70;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 9px 12px 9px 10px; border: 0; border-radius: 12px;
+  background: #fff; color: var(--deep); font: 700 14px/1 var(--f-sans);
+  box-shadow: 0 0 0 1px var(--line), 0 8px 22px rgba(4,15,56,.18);
+  cursor: pointer; transition: opacity .3s, transform .2s;
+}
+#editFab:hover { transform: translateY(-2px); }
+#editFab svg { width: 18px; height: 18px; fill: none; stroke: var(--blue); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+#editFab kbd { font: 600 12px/1 var(--f-mono); background: var(--ice); padding: 4px 6px; border-radius: 5px; }
+#editFab.draft::after { content: "draf belum disimpan"; font: 600 12px/1 var(--f-sans); color: #8A5A00; background: #FFF1CC; padding: 4px 7px; border-radius: 6px; }
+body.idle #editFab, body.editing #editFab, body.mode-mirror #editFab, :root:fullscreen #editFab { opacity: 0; pointer-events: none; }
+
+/* toolbar atas */
+#edbar {
+  position: fixed; left: 0; right: 0; top: 0; height: 58px; z-index: 95;
+  display: none; align-items: center; gap: 14px; padding: 0 14px;
+  background: var(--deeper); color: #fff; font: 500 14px/1.2 var(--f-sans);
+}
+body.editing #edbar { display: flex; }
+body.editing { background: #E3EAF8; }
+#edbar button { font: 600 14px/1 var(--f-sans); border: 0; border-radius: 9px; padding: 9px 12px; cursor: pointer; background: rgba(255,255,255,.1); color: #fff; }
+#edbar button:hover { background: rgba(255,255,255,.2); }
+#edbar button.primary { background: var(--blue); }
+#edbar button.primary:hover { background: var(--blue-2); }
+#edbar button.ghost { background: transparent; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.3); }
+#edbar .tag { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; white-space: nowrap; }
+#edbar .tag i { width: 9px; height: 9px; border-radius: 50%; background: var(--sky); box-shadow: 0 0 0 4px rgba(91,184,255,.25); }
+#edbar .nav { display: flex; align-items: center; gap: 6px; min-width: 0; }
+#edbar .nav button { font-size: 20px; padding: 5px 11px; }
+#edbar .where { display: flex; gap: 8px; align-items: baseline; min-width: 0; max-width: 360px; }
+#edbar .where .no { font: 600 13px/1 var(--f-mono); color: var(--sky); white-space: nowrap; }
+#edbar .where .ti { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--on-deep-2); }
+#edbar .fmt { display: flex; gap: 6px; padding-left: 12px; border-left: 1px solid rgba(255,255,255,.18); }
+#edbar .fmt .hl { color: var(--sky); }
+#edbar .status { flex: 1; min-width: 0; text-align: right; color: var(--on-deep-2); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#edbar .status.warn { color: #FFD98A; }
+#edbar .status.ok { color: #9FE2C3; }
+#edbar .status.err { color: #FFB4BF; }
+#edbar .act { display: flex; gap: 8px; }
+
+/* teks yang bisa diklik */
+body.editing #stage [contenteditable] { cursor: text; outline: 3px dashed transparent; outline-offset: 6px; border-radius: 4px; transition: outline-color .15s; }
+body.editing #stage [contenteditable]:hover { outline-color: rgba(31,91,255,.45); }
+body.editing #stage [contenteditable]:focus { outline: 4px solid var(--blue); background: rgba(91,184,255,.10); }
+body.editing #stage .slide.deep [contenteditable]:hover, body.editing #stage .panel [contenteditable]:hover { outline-color: rgba(169,212,255,.7); }
+body.editing #stage text[data-ek] { cursor: pointer; }
+body.editing #stage text[data-ek]:hover { text-decoration: underline; text-decoration-thickness: 3px; }
+
+#edsvg {
+  position: fixed; z-index: 120; display: none;
+  font: 600 16px/1.2 var(--f-sans); color: var(--ink);
+  padding: 8px 10px; border: 2px solid var(--blue); border-radius: 8px; background: #fff;
+  box-shadow: 0 8px 24px rgba(4,15,56,.25);
+}
+
+/* panel catatan pembicara (seperti notes pane PowerPoint) */
+#ednotes {
+  position: fixed; left: 0; right: 0; bottom: 0; height: 268px; z-index: 95;
+  display: none; flex-direction: column;
+  background: #fff; border-top: 1px solid var(--line-2); font: 400 14px/1.4 var(--f-sans); color: var(--ink);
+}
+body.editing #ednotes { display: flex; }
+#ednotes.closed { height: 46px; }
+#ednotes.closed .nb { display: none; }
+#ednotes.closed .nh i { transform: rotate(180deg); }
+#ednotes .nh { display: flex; align-items: center; gap: 12px; height: 46px; padding: 0 16px; border: 0; background: none; cursor: pointer; text-align: left; font: 700 14px/1 var(--f-sans); color: var(--deep); flex: none; }
+#ednotes .nh .nsl { font-weight: 500; color: var(--ink-3); }
+#ednotes .nh i { margin-left: auto; font-style: normal; transition: transform .2s; }
+#ednotes .nb { display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 14px; padding: 0 16px 14px; flex: 1; min-height: 0; }
+#ednotes label { display: flex; flex-direction: column; gap: 5px; min-height: 0; }
+#ednotes label > span { font: 700 11.5px/1 var(--f-sans); color: var(--blue); letter-spacing: .02em; }
+#ednotes .col { display: flex; flex-direction: column; gap: 10px; min-height: 0; }
+#ednotes .two { display: grid; grid-template-columns: 1fr 120px; gap: 10px; }
+#ednotes .f-script textarea { flex: 1; }
+#ednotes textarea, #ednotes input, #ednotes select {
+  width: 100%; font: 400 14px/1.45 var(--f-sans); color: var(--ink);
+  border: 1.5px solid var(--line-2); border-radius: 9px; padding: 8px 10px; background: #fff; resize: none;
+}
+#ednotes textarea:focus, #ednotes input:focus, #ednotes select:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(31,91,255,.15); }
+#ednotes .col textarea { flex: 1; min-height: 44px; }
+
+/* dialog */
+#edmodal { position: fixed; inset: 0; z-index: 130; display: none; align-items: center; justify-content: center; background: rgba(4,15,56,.45); }
+#edmodal.on { display: flex; }
+#edmodal .box { background: #fff; border-radius: 16px; padding: 24px 26px 20px; max-width: 480px; width: calc(100% - 32px); box-shadow: 0 20px 50px rgba(4,15,56,.35); font: 400 15px/1.55 var(--f-sans); color: var(--ink-2); }
+#edmodal .t { font: 800 19px/1.25 var(--f-sans); color: var(--ink); margin: 0 0 8px; }
+#edmodal .b { margin: 0 0 18px; }
+#edmodal .bt { display: flex; gap: 10px; justify-content: flex-end; }
+#edmodal button { font: 700 14px/1 var(--f-sans); border: 0; border-radius: 10px; padding: 11px 16px; cursor: pointer; }
+#edmodal button.primary { background: var(--blue); color: #fff; }
+#edmodal button.ghost { background: var(--ice); color: var(--deep); }
+
+@media (max-width: 1100px) {
+  #edbar .fmt button:last-child, #edbar .where .ti { display: none; }
+  #ednotes .nb { grid-template-columns: 1fr 1fr; }
+  #ednotes .nb > .col:last-child { display: none; }
+}

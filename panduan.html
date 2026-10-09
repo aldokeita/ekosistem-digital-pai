@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panduan Presentasi · Ekosistem Digital</title>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+
+<header class="hero">
+  <svg class="net" aria-hidden="true"></svg>
+  <div class="in">
+    <nav class="crumb"><a href="index.html">Beranda</a><a href="presentasi.html">Presentasi</a><a href="bank-qa.html">Bank Q&amp;A</a></nav>
+    <p class="kick">Panduan presentasi · Literasi Digital PAI, pertemuan 3</p>
+    <h1>Ekosistem Digital dan Tantangan <em>Pendidikan Islam</em></h1>
+    <p class="sub">Contoh ucapan, cue, dan batas klaim untuk setiap slide. Naskahnya boleh disesuaikan dengan gaya bicara masing-masing; yang penting angka dan batas tafsirnya tetap.</p>
+    <div class="meta"><span><b>Aldo Pratama Joani</b> · 2686130003</span><span><b>Paisal</b> · 2686130006</span><span>Dosen: <b>Dr. Muhamad Ali, M.Pd.I</b></span><span>Revisi 3 · Oktober 2026</span></div>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="toc">
+    <p>ISI PANDUAN</p>
+    <a href="#ringkas">Ringkasan dan pembagian</a>
+    <a href="#pakai">Cara memakai file</a>
+    <a href="#edit">Mengubah teks</a>
+    <a href="#cek">Cek sebelum tampil</a>
+    <a href="#garis">Batas klaim</a>
+    <a href="#slide">Panduan per slide</a>
+    <div class="sub" id="toc-slides"></div>
+    <a href="#pustaka">Daftar pustaka</a>
+  </aside>
+
+  <main>
+    <section class="blk" id="ringkas">
+      <h2 class="h"><small>01</small>Ringkasan dan pembagian pembicara</h2>
+      <p class="lede">Alurnya mengikuti bab makalah: ekosistem digital dibahas lebih dulu, lalu tantangan, lalu gamifikasi. LPQ baru masuk setelah kerangka umumnya jelas. <span id="ratio"></span></p>
+      <div class="facts" id="facts"></div>
+      <h3 class="chapter-h" style="margin-top:28px">Urutan pembicara</h3>
+      <div class="tline" id="tline"></div>
+      <div class="tlegend"><span><i style="background:var(--blue)"></i>Aldo</span><span><i style="background:var(--deep)"></i>Paisal</span><span><i style="background:var(--sky)"></i>Berdua</span></div>
+      <table class="t" id="runs" style="margin-top:16px">
+        <thead><tr><th>Slide</th><th>Pembicara</th><th>Isi</th><th>Durasi</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="lede" style="margin-top:14px">Durasi di atas adalah alokasi latihan, belum hasil pengukuran saat tampil. Kalau waktu mepet, slide 3, 11, 28, dan 34 paling aman dipersingkat.</p>
+    </section>
+
+    <section class="blk" id="pakai">
+      <h2 class="h"><small>02</small>Cara memakai file</h2>
+      <p class="lede">Semua file berjalan tanpa internet. Font dan pustaka animasi sudah ada di folder <code>assets</code>, jadi folder <b>Revisi 3 HTML</b> cukup disalin utuh ke flashdisk atau laptop yang dipakai.</p>
+      <div class="grid2">
+        <div class="panel">
+          <h3 class="chapter-h" style="margin-top:0">Tombol di presentasi</h3>
+          <div class="keys">
+            <div><kbd>→</kbd><kbd>Spasi</kbd><span>lanjut</span></div>
+            <div><kbd>←</kbd><span>kembali</span></div>
+            <div><kbd>F</kbd><span>layar penuh</span></div>
+            <div><kbd>P</kbd><span>buka presenter view</span></div>
+            <div><kbd>O</kbd><span>lihat semua slide</span></div>
+            <div><kbd>B</kbd><kbd>.</kbd><span>layar hitam</span></div>
+            <div><kbd>12</kbd><kbd>Enter</kbd><span>lompat ke slide 12</span></div>
+            <div><kbd>M</kbd><span>animasi nyala/mati</span></div>
+            <div><kbd>Home</kbd><kbd>End</kbd><span>slide pertama/terakhir</span></div>
+            <div><kbd>H</kbd><span>tampilkan bantuan</span></div>
+          </div>
+          <p class="lede" style="margin:14px 0 0;font-size:15px">Clicker presentasi biasa (PageUp/PageDown) langsung bisa dipakai. Beberapa slide punya langkah klik: slide 12, 22, 26, 29, dan 30.</p>
+        </div>
+        <div class="panel">
+          <h3 class="chapter-h" style="margin-top:0">Memakai dua layar</h3>
+          <ul class="check">
+            <li>Buka <b>presentasi.html</b> di Chrome atau Edge.</li>
+            <li>Tekan <kbd>P</kbd>. Jendela presenter terbuka; izinkan pop-up bila browser bertanya.</li>
+            <li>Atur tampilan Windows ke <b>Extend</b> (<kbd>Win</kbd>+<kbd>P</kbd>). Seret jendela presentasi ke proyektor, lalu tekan <kbd>F</kbd>.</li>
+            <li>Jendela presenter tetap di laptop: berisi naskah, cue, slide berikutnya, dan timer.</li>
+            <li>Navigasi bisa dari jendela mana saja. Keduanya selalu sinkron.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="blk" id="edit">
+      <h2 class="h"><small>02b</small>Mengubah teks seperti di PowerPoint</h2>
+      <p class="lede">Teks slide dan catatan pembicara bisa diubah langsung dari presentasi, tanpa membuka kode.</p>
+      <div class="grid2">
+        <div class="panel">
+          <h3 class="chapter-h" style="margin-top:0">Langkahnya</h3>
+          <ul class="check">
+            <li>Buka <b>presentasi.html</b>, lalu tekan <kbd>E</kbd> atau klik tombol <b>Edit teks</b> di pojok kiri bawah.</li>
+            <li>Klik teks mana pun di slide, lalu ketik. Teks di dalam grafik (label, angka) juga bisa diklik.</li>
+            <li>Pindah slide dengan tombol ‹ › di toolbar atau <kbd>PageUp</kbd>/<kbd>PageDown</kbd>.</li>
+            <li>Naskah, cue, transisi, pembicara, dan durasi diubah di panel <b>Catatan pembicara</b> di bawah slide.</li>
+            <li>Klik <b>Simpan ke file</b> atau tekan <kbd>Ctrl</kbd>+<kbd>S</kbd>. Pertama kali, pilih folder <b>Revisi 3 HTML</b> dan izinkan browser menyimpan.</li>
+            <li>Tekan <kbd>Esc</kbd> atau <b>Selesai</b> untuk kembali ke mode presentasi.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3 class="chapter-h" style="margin-top:0">Yang perlu diketahui</h3>
+          <ul class="check">
+            <li>Perubahan tersimpan di <code>assets/js/edits.js</code>. File asli tidak ditimpa, dan versi sebelumnya disimpan sebagai <code>edits.prev.js</code>.</li>
+            <li>Sebelum disimpan ke file, perubahan aman sebagai draf di browser itu. Draf tidak ikut kalau folder disalin ke laptop lain, jadi simpan ke file dulu.</li>
+            <li>Tombol <b>B</b> untuk tebal, <b>Biru</b> untuk mewarnai kata seperti sorotan di judul, dan <b>Kembalikan slide ini</b> untuk membatalkan semua perubahan di slide tersebut.</li>
+            <li>Angka yang beranimasi ikut menyesuaikan angka yang diketik. Tinggi batang grafik tidak ikut berubah; untuk itu datanya perlu diubah di kode.</li>
+            <li>Naskah yang diubah langsung muncul di presenter view dan panduan ini.</li>
+            <li>Simpan langsung ke folder berjalan di Chrome dan Edge. Di browser lain, file <code>edits.js</code> diunduh dan perlu dipindahkan manual ke <code>assets/js</code>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="blk" id="cek">
+      <h2 class="h"><small>03</small>Cek sebelum tampil</h2>
+      <div class="grid2">
+        <div class="panel">
+          <h3 class="chapter-h" style="margin-top:0">Sehari sebelumnya</h3>
+          <ul class="check">
+            <li>Latihan penuh sekali dengan timer presenter. Catat slide yang molor.</li>
+            <li>Latihan bagian pergantian pembicara: 5→6, 11→12, 15→16, 20→21, 28→29, 31→32.</li>
+            <li>Baca bank Q&amp;A bagian masing-masing. Bagian D paling sering ditanya.</li>
+            <li>Salin folder Revisi 3 HTML utuh ke flashdisk dan coba buka dari sana.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3 class="chapter-h" style="margin-top:0">Sepuluh menit sebelum mulai</h3>
+          <ul class="check">
+            <li>Buka presentasi di laptop kelas. Pastikan judul memakai huruf tebal yang rapat; kalau terlihat seperti font Windows biasa, folder <code>assets</code> mungkin tidak ikut tersalin.</li>
+            <li>Uji clicker: maju, mundur, dan layar hitam.</li>
+            <li>Kalau animasi terasa patah-patah di proyektor, tekan <kbd>M</kbd> untuk mematikannya.</li>
+            <li>Kembali ke slide 1 dengan <kbd>Home</kbd>, lalu tekan Ulang pada timer presenter.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="blk" id="garis">
+      <h2 class="h"><small>04</small>Batas klaim yang dijaga</h2>
+      <p class="lede">Bagian ini yang paling sering membuat presentasi kasus "kebablasan". Kalau ragu, pakai rumusan di sini.</p>
+      <div class="redlines">
+        <div><b>Poin bukan pahala</b><span>Poin adalah catatan sistem. Hadis tentang sepuluh kebaikan dipakai sebagai pengingat, bukan dasar menyamakan keduanya.</span></div>
+        <div><b>Tier bukan jilid</b><span>Tier menunjukkan akumulasi poin. Kualitas bacaan dinilai guru; kenaikan jilid lewat ujian.</span></div>
+        <div><b>Data deskriptif, bukan sebab-akibat</b><span>Keterlambatan turun bersamaan dengan aturan baru. Itu belum membuktikan aturannya penyebab.</span></div>
+        <div><b>Catatan, bukan santri</b><span>41,7% adalah persentase catatan kehadiran. Persentase santri yang pernah terlambat dihitung terpisah.</span></div>
+        <div><b>186 dan 183</b><span>186 santri aktif termasuk 2 dewasa. Grafik tier memakai santri anak saja, tanpa 1 akun dummy uji coba: 183.</span></div>
+        <div><b>September sampai tanggal 26</b><span>Semua data lembaga diambil 26 September 2026, bukan kondisi hari presentasi.</span></div>
+        <div><b>Aturan poin bukan algoritma rekomendasi</b><span>"Algoritma" di LPQ berarti aturan hitung poin, tier, dan urutan leaderboard. Rekap data LPQ juga tidak disebut big data.</span></div>
+        <div><b>Usulan tetap usulan</b><span>Strategi TOWS, persetujuan wali, dan kebijakan masa simpan data adalah saran, belum kondisi yang berjalan.</span></div>
+      </div>
+    </section>
+
+    <section class="blk" id="slide">
+      <h2 class="h"><small>05</small>Panduan per slide</h2>
+      <p class="lede">Kolom kiri berisi contoh ucapan. Tidak perlu dihafal kata per kata: pahami alurnya, pegang angkanya, lalu sampaikan dengan bahasa sendiri. Kolom kanan berisi tujuan, cue gerak, dan hal yang perlu dihindari.</p>
+      <div id="guide-slides"></div>
+    </section>
+
+    <section class="blk" id="pustaka">
+      <h2 class="h"><small>06</small>Daftar pustaka</h2>
+      <p class="lede">Sesuai daftar pustaka makalah. Sumber pendukung presentasi dicantumkan terpisah di bagian akhir.</p>
+      <div class="panel">
+        <p class="refs-h">Buku dan dokumen resmi</p>
+        <ol class="refs">
+          <li>an-Nahlawi, Abdurrahman. <i>Pendidikan Islam di Rumah, Sekolah, dan Masyarakat.</i> Terj. Shihabuddin. Jakarta: Gema Insani Press, 1995.</li>
+          <li>Badan Pusat Statistik. <i>Profil Anak Usia Dini 2024.</i> Jakarta: BPS, 2024.</li>
+          <li>Belshaw, Douglas A. J. <i>The Essential Elements of Digital Literacies.</i> Independent Publisher, 2014.</li>
+          <li>Kementerian Agama RI. <i>Al-Qur'an dan Terjemahannya.</i> Jakarta: Lajnah Pentashihan Mushaf Al-Qur'an, 2019.</li>
+          <li>Kementerian Komunikasi dan Informatika RI. <i>Modul Literasi Digital: Kecakapan Digital, Budaya Digital, Etika Digital, dan Keamanan Digital.</i> Jakarta: Kominfo dan Siberkreasi, 2021.</li>
+          <li>Nata, Abuddin. <i>Pendidikan Islam di Era Digital: Tantangan dan Peluang.</i> Jakarta: Kencana, 2020.</li>
+          <li>Rangkuti, Freddy. <i>Analisis SWOT: Teknik Membedah Kasus Bisnis.</i> Jakarta: Gramedia Pustaka Utama, 2006.</li>
+          <li>UNESCO. <i>Global Education Monitoring Report 2023: Technology in Education: A Tool on Whose Terms?</i> Paris: UNESCO, 2023.</li>
+          <li>Werbach, Kevin, dan Dan Hunter. <i>For the Win: How Game Thinking Can Revolutionize Your Business.</i> Philadelphia: Wharton Digital Press, 2012.</li>
+        </ol>
+        <p class="refs-h">Kitab hadis</p>
+        <ol class="refs">
+          <li>al-Bukhari, Muhammad bin Isma'il. <i>Shahih al-Bukhari.</i> Kitab Bad' al-Wahy, no. 1.</li>
+          <li>at-Tirmidzi, Muhammad bin 'Isa. <i>Sunan at-Tirmidzi.</i> Kitab Fadha'il al-Qur'an, no. 2910.</li>
+        </ol>
+        <p class="refs-h">Artikel jurnal dan prosiding</p>
+        <ol class="refs">
+          <li>Ababil, A. M. S., Z. Abidin, Saifuddin, dan A. Fawait. "Penerapan Gamifikasi dalam Pembelajaran Pendidikan Islam untuk Meningkatkan Motivasi dan Hasil Belajar Siswa." <i>Indonesian Journal on Education</i> 1, no. 4 (2025): 316–322. doi:10.70437/ijoed.v1i4.72</li>
+          <li>Al-Aqsha, A. Q., D. A. Saputri, dan I. Makruf. "Fragmentasi Otoritas Keagamaan dalam Konten Media Digital: Tantangan Epistemologis bagi Pembelajaran PAI." <i>Mozaic: Islamic Studies Journal</i> 5, no. 1 (2026). doi:10.35719/mozaic.v5i01.2616</li>
+          <li>Deci, Edward L., Richard Koestner, dan Richard M. Ryan. "A Meta-Analytic Review of Experiments Examining the Effects of Extrinsic Rewards on Intrinsic Motivation." <i>Psychological Bulletin</i> 125, no. 6 (1999): 627–668.</li>
+          <li>Deterding, Sebastian, Dan Dixon, Rilla Khaled, dan Lennart Nacke. "From Game Design Elements to Gamefulness: Defining 'Gamification'." <i>Proceedings of the 15th International Academic MindTrek Conference,</i> 9–15. New York: ACM, 2011.</li>
+          <li>Hanus, Michael D., dan Jesse Fox. "Assessing the Effects of Gamification in the Classroom." <i>Computers &amp; Education</i> 80 (2015): 152–161.</li>
+          <li>Ma'rufin. "Pesantren, Pondok Modern, Metode Targhib dan Tarhib (Reward dan Punishment dalam Pendidikan Islam)." <i>Risâlah</i> 2, no. 1 (2015): 67–77. doi:10.31943/jurnal_risalah.v2i1.13</li>
+          <li>Marsinah dan Nurhasanah. "Dampak Penggunaan Gadget terhadap Perubahan Minat Membaca Al-Qur'an di Desa Kawuwu Bima." <i>JEMARI</i> 1, no. 1 (2023): 1–11. doi:10.47625/jemari.v1i1.474</li>
+          <li>Moore, James F. "Predators and Prey: A New Ecology of Competition." <i>Harvard Business Review</i> 71, no. 3 (1993): 75–86.</li>
+          <li>Rifdillah, M., Wahyuddin, A. Muhtarom, P. Mulyosaputro, dan V. Vitisia. "Pendidikan Islam, New Media dan Pergeseran Otoritas Keagamaan." <i>Kaganga</i> 7, no. 1 (2024). doi:10.31539/kaganga.v7i1.8892</li>
+          <li>Ryan, Richard M., dan Edward L. Deci. "Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being." <i>American Psychologist</i> 55, no. 1 (2000): 68–78.</li>
+          <li>Saharani, L., dan A. D. Ningsih. "Implementasi Penggunaan Media Pembelajaran Berbasis Gamifikasi pada Pembelajaran Tahfidz di MTsS Al-Washliyah Medan Krio." <i>EDU SOCIETY</i> 5, no. 1 (2025): 287–295. doi:10.56832/edu.v5i1.785</li>
+          <li>Sailer, Michael, dan Lisa Homner. "The Gamification of Learning: A Meta-analysis." <i>Educational Psychology Review</i> 32 (2020): 77–112. doi:10.1007/s10648-019-09498-w</li>
+          <li>Setiadi, F. M., S. Maryati, dan A. S. Mubharokh. "Analisis Dampak Penggunaan Gadget terhadap Perkembangan Psikologis dan Keagamaan Anak Usia Dini (TK dan SD) dalam Perspektif Pendidikan Agama Islam." <i>Muaddib</i> 7, no. 1 (2024): 1–11. doi:10.19109/muaddib.v7i1.24432</li>
+          <li>Weihrich, Heinz. "The TOWS Matrix: A Tool for Situational Analysis." <i>Long Range Planning</i> 15, no. 2 (1982): 54–66.</li>
+        </ol>
+        <p class="refs-h">Peraturan perundang-undangan</p>
+        <ol class="refs">
+          <li>Peraturan Pemerintah Republik Indonesia Nomor 17 Tahun 2025 tentang Tata Kelola Penyelenggaraan Sistem Elektronik dalam Pelindungan Anak.</li>
+          <li>Undang-Undang Republik Indonesia Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi.</li>
+        </ol>
+        <p class="refs-h">Sumber online dan data lembaga</p>
+        <ol class="refs">
+          <li>"6% Anak di Bawah Usia 1 Tahun Sudah Gunakan HP." GoodStats Data. https://data.goodstats.id/statistic/6-anak-di-bawah-usia-1-tahun-sudah-gunakan-hp-Jan9u</li>
+          <li>"APJII Catat Tingkat Penetrasi Internet Indonesia Capai 80,66 Persen." ANTARA News, 6 Agustus 2025. https://www.antaranews.com/berita/5019229/</li>
+          <li>LPQ Al-Fath Maulana. Basis Data Sistem Informasi LPQ Al-Fath Maulana (lpqalfathmaulana.id). Data agregat Juli–September 2026. Diakses 26 September 2026.</li>
+          <li>LPQ Al-Fath Maulana. Repositori kode sumber "LPQ-Al-Fath-Maulana." GitHub. https://github.com/aldokeita/LPQ-Al-Fath-Maulana</li>
+        </ol>
+        <p class="refs-h">Pendukung presentasi (di luar daftar pustaka makalah)</p>
+        <ol class="refs">
+          <li>Internet Society. <i>The Internet of Things: An Overview.</i> 2015. https://www.internetsociety.org/resources/doc/2015/iot-overview/ (model konektivitas lewat gateway, slide 6).</li>
+          <li>YouTube Help. "How YouTube recommendations work." https://support.google.com/youtube/answer/16089387 (contoh sinyal rekomendasi, slide 8).</li>
+          <li>IBM. "What is big data?" https://www.ibm.com/think/topics/big-data (pengertian pendukung, slide 9).</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="f">Panduan ini dibuat dari data yang sama dengan presentasi (<code>assets/js/deck-data.js</code>), jadi naskah dan nomor slide selalu cocok. Untuk dicetak, gunakan Ctrl+P lalu pilih "Simpan sebagai PDF".</footer>
+
+<script src="assets/js/deck-data.js"></script>
+<script src="assets/js/edits.js"></script>
+<script src="assets/js/docs.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bank Q&amp;A · Ekosistem Digital</title>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+
+<header class="hero">
+  <svg class="net" aria-hidden="true"></svg>
+  <div class="in">
+    <nav class="crumb"><a href="index.html">Beranda</a><a href="presentasi.html">Presentasi</a><a href="panduan.html">Panduan</a></nav>
+    <p class="kick">Bank Q&amp;A · persiapan sesi diskusi</p>
+    <h1>Pertanyaan yang mungkin muncul, <em>dan cara menjawabnya</em></h1>
+    <p class="sub">Setiap pertanyaan punya jawaban singkat untuk sekitar 30 detik, bahan tambahan kalau penanya masih mengejar, dasar rujukan, dan penjawab utama.</p>
+    <div class="meta"><span><b>Aldo Pratama Joani</b> · 2686130003</span><span><b>Paisal</b> · 2686130006</span><span>Revisi 3 · Oktober 2026</span></div>
+  </div>
+</header>
+
+<div class="wrap" style="padding-top:34px;padding-bottom:70px">
+  <section class="blk">
+    <h2 class="h"><small>SEBELUM MENJAWAB</small>Pegangan saat sesi tanya jawab</h2>
+    <div class="panel"><ol class="tips" id="tips"></ol></div>
+  </section>
+
+  <div class="tools">
+    <div class="row">
+      <input type="search" id="q" placeholder="Cari kata kunci atau nomor slide, misalnya &quot;Gatcha&quot; atau &quot;slide 26&quot;" aria-label="Cari pertanyaan">
+      <select id="who" aria-label="Penjawab">
+        <option value="all">Semua penjawab</option>
+        <option value="Aldo">Aldo</option>
+        <option value="Paisal">Paisal</option>
+      </select>
+      <button type="button" class="ghost" id="openAll">Buka semua</button>
+      <button type="button" class="ghost" id="closeAll">Tutup semua</button>
+      <button type="button" id="printBtn">Cetak</button>
+    </div>
+    <div class="chipsel" id="secs" role="group" aria-label="Bagian"></div>
+    <p class="count-l" id="cnt"></p>
+  </div>
+
+  <div id="qa-list"></div>
+</div>
+
+<footer class="f">Nomor slide mengikuti presentasi revisi 3 (35 slide) dan dihitung otomatis dari <code>assets/js/deck-data.js</code>. Untuk dicetak, gunakan tombol Cetak; semua jawaban akan terbuka.</footer>
+
+<script src="assets/js/deck-data.js"></script>
+<script src="assets/js/qa-data.js"></script>
+<script src="assets/js/docs.js"></script>
+</body>
+</html>
