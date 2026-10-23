@@ -216,24 +216,24 @@ window.DECK = {
       source: "Makalah Bab II E."
     },
     {
-      id: "s20", chapter: 4, speaker: "Paisal", sec: 70, steps: 4,
-      title: "Guru mengajak anak memeriksa sumber ilmu",
-      purpose: "Menawarkan cara praktis mengajarkan tabayyun terhadap konten agama.",
-      script: "Solusi pertama untuk guru adalah mengajarkan literasi digital keagamaan. Prinsipnya sudah ada dalam Al-Qur'an surah Al-Hujurat ayat 6: jika datang kepadamu seorang fasik membawa berita, maka telitilah kebenarannya. Ini yang kita kenal sebagai tabayyun. Caranya bisa sederhana. Guru membawa satu potongan video ceramah yang sedang ramai ke dalam kelas, lalu bersama anak-anak bertanya empat hal. Siapa yang berbicara? Dari mana ia belajar? Apa dalilnya? Adakah ulama lain yang berpendapat berbeda? Dengan cara ini, media sosial tidak dijauhi, tetapi dijadikan bahan belajar. Guru juga memberi contoh dengan selalu menyebut sumber, dan berani berkata belum tahu kalau memang belum tahu.",
-      cue: "Klik empat kali, satu untuk setiap pertanyaan. Ucapkan pertanyaannya seperti sedang bertanya kepada siswa.",
-      transition: "Solusi kedua untuk guru menyangkut cara membuat belajar agama lebih menarik.",
-      caution: "Empat pertanyaan ini adalah rumusan kami dari prinsip tabayyun, bukan rumusan baku dari kitab tertentu.",
-      source: "Makalah Bab II E.1. QS. Al-Hujurat [49]: 6."
+      id: "s20", chapter: 4, speaker: "Paisal", sec: 70, steps: 3,
+      title: "Guru mengajak anak memahami siklus digital",
+      purpose: "Menawarkan solusi pertama: guru mendidik anak tentang siklus algoritma, dampaknya, dan cara membatasi diri.",
+      script: "Solusi pertama untuk guru adalah mengajak anak memahami siklus tadi. Ingat siklus di slide tujuh: perangkat merekam, algoritma menebak, platform menyuguhkan, lalu anak terus menonton. Kalau anak tidak menyadarinya, ia bisa terjerat dalam lingkaran yang tidak berhenti, seolah-olah algoritmalah yang mengatur waktunya. Ada tiga langkah. Pertama, kenali siklusnya. Guru menunjukkan bagaimana aplikasi merekam dan menebak selera anak. Kedua, pahami dampaknya. Waktu habis tanpa terasa, sulit fokus belajar, bahkan ibadah dan mengaji terabaikan. Ketiga, pasang batasan dan bijak memakai. Di sini guru mengarahkan: kapan harus berhenti, apa yang layak ditonton, dan siapa yang bisa dipercaya. Allah bersumpah demi waktu dalam surah Al-'Ashr: sesungguhnya manusia benar-benar dalam kerugian, kecuali yang mengisi waktunya dengan iman dan amal saleh.",
+      cue: "Klik tiga kali untuk memunculkan langkah. Tunjuk titik yang terus berputar saat menyebut 'lingkaran yang tidak berhenti'.",
+      transition: "Siklus yang sama sebenarnya bisa kita pakai untuk kebaikan.",
+      caution: "Hindari menakut-nakuti anak dengan kata seperti 'kecanduan' tanpa dasar diagnosis. Dampak yang disebut mengikuti Setiadi dkk. (2024) dan UNESCO (2023).",
+      source: "Makalah Bab II A.2 dan E.1. Setiadi dkk. (2024). UNESCO, GEM Report 2023. QS. Al-'Ashr [103]: 1–3."
     },
     {
-      id: "s21", chapter: 4, speaker: "Paisal", sec: 90, steps: 2,
-      title: "Gamifikasi boleh, asalkan ada rambunya",
-      purpose: "Menyajikan gamifikasi sebagai salah satu solusi lengkap dengan bukti, risiko, dan rambu Islam.",
-      script: "Solusi kedua adalah gamifikasi, artinya memakai unsur game seperti poin, level, dan papan peringkat atau leaderboard dalam kegiatan belajar. Penelitian menunjukkan hasil yang menjanjikan. Meta-analisis Sailer dan Homner menemukan pengaruh positif terhadap hasil belajar, motivasi, dan perilaku belajar. Angka 0,49 ini ukuran efek, bukan persen, dan untuk ukuran pendidikan angka itu tergolong lumayan. Tetapi gamifikasi bisa berbalik. Hanus dan Fox menemukan kelas yang memakai badge dan leaderboard selama satu semester justru turun motivasi dan nilainya. Anak bisa rajin hanya karena poin, lalu berhenti saat poinnya tidak ada. Karena itu perlu rambu. Islam sendiri mengenal targhib wa tarhib, dorongan dan peringatan, serta perintah berlomba dalam kebaikan. Tetapi semuanya dibingkai oleh niat, innamal a'malu binniyat. Jadi poin hanya sarana, setiap memberi poin ingatkan niat dan pahala. Hargai kemajuan, bukan hanya juara. Kurangi poin untuk menyadarkan, bukan mempermalukan. Dan tidak harus aplikasi, papan bintang di dinding kelas pun cukup.",
-      cue: "Klik pertama untuk kotak risiko, klik kedua untuk rambu. Bacakan teks Arab dengan pelan.",
+      id: "s21", chapter: 4, speaker: "Paisal", sec: 85,
+      title: "Memakai cara kerja ekosistem digital untuk kebaikan",
+      purpose: "Memberi contoh memanfaatkan bentuk-bentuk yang mirip ekosistem digital agar anak belajar dengan cara yang akrab baginya; gamifikasi salah satunya.",
+      script: "Solusi kedua, kita pakai cara kerja ekosistem digital untuk kebaikan. Anak sudah akrab dengan poin, rekomendasi, grup, dan statistik. Jadi guru bisa memakai bentuk yang sama. Contoh pertama, gamifikasi, seperti game: poin, level, dan papan bintang untuk target bacaan dan datang tepat waktu. Contoh kedua, seperti rekomendasi: guru menyusun daftar tontonan pilihan, misalnya murattal dan kajian dari ustadz yang jelas ilmunya. Contoh ketiga, seperti platform: tantangan di grup kelas, misalnya setor rekaman bacaan atau hafalan setiap hari lewat WhatsApp. Contoh keempat, seperti data: kartu atau grafik yang menunjukkan kemajuan bacaan anak dari bulan ke bulan. Tetap ada rambunya. Poin hanya sarana, niatnya tetap karena Allah. Penelitian Sailer dan Homner menunjukkan gamifikasi membantu belajar, dengan ukuran efek 0,49, tetapi Hanus dan Fox mengingatkan hasilnya bisa berbalik kalau anak hanya mengejar poin.",
+      cue: "Tunjuk keempat kartu dari kiri ke kanan. Kartu biru, gamifikasi, adalah contoh yang paling dikenal.",
       transition: "Sekarang solusi untuk lembaga dan orang tua.",
-      caution: "Jangan menyebut 0,49 sebagai 49 persen. Hasil Hanus dan Fox berasal dari kelas mahasiswa di Amerika Serikat, jadi tidak bisa langsung disamakan dengan anak TPQ.",
-      source: "Makalah Bab II E.2. Deterding dkk. (2011). Werbach dan Hunter (2012). Sailer dan Homner (2020). Hanus dan Fox (2015). Deci, Koestner, dan Ryan (1999). An-Nahlawi (1995). QS. Al-Baqarah [2]: 148. HR. at-Tirmidzi no. 2910. HR. al-Bukhari no. 1."
+      caution: "Jangan menyebut 0,49 sebagai 49 persen. Tiga contoh selain gamifikasi adalah usulan kami, belum ada penelitian yang kami kutip untuk masing-masing.",
+      source: "Makalah Bab II E.2. Deterding dkk. (2011). Sailer dan Homner (2020). Hanus dan Fox (2015). Deci, Koestner, dan Ryan (1999). HR. al-Bukhari no. 1."
     },
     {
       id: "s22", chapter: 4, speaker: "Paisal", sec: 80,

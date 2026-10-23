@@ -90,7 +90,7 @@ window.QA = {
       sec: "B", who: "Paisal", slides: ["s11"],
       q: "Apakah semua ustadz di media sosial tidak bisa dipercaya?",
       short: "Tidak, banyak ulama dan ustadz yang berilmu dan berdakwah lewat media sosial. Yang kami persoalkan adalah anak dan orang tua yang tidak terbiasa memeriksa siapa yang berbicara dan dari mana ilmunya. Masalahnya ada pada cara kita menerima, bukan pada medianya.",
-      more: "Karena itu solusi kami untuk guru adalah mengajarkan empat pertanyaan tabayyun, bukan menjauhkan anak dari konten agama.",
+      more: "Karena itu salah satu arahan guru di solusi pertama adalah memilih sumber ilmu yang bisa dipercaya, bukan menjauhkan anak dari konten agama.",
       basis: "Makalah Bab II C.2 dan E.1; Rifdillah dkk. (2024)."
     },
     {
@@ -203,11 +203,25 @@ window.QA = {
 
     /* ---------- D ---------- */
     {
+      sec: "D", who: "Paisal", slides: ["s20", "s07"],
+      q: "Bagaimana menjelaskan siklus algoritma kepada anak SD?",
+      short: "Pakai contoh yang mereka alami sendiri. Misalnya, tanya: setelah menonton satu video kartun, apa yang muncul berikutnya? Lalu jelaskan bahwa aplikasi mencatat apa yang mereka tonton dan sengaja menyuguhkan yang mirip supaya mereka tidak berhenti. Anak biasanya cepat paham kalau melihat sendiri polanya.",
+      more: "Setelah itu buat kesepakatan sederhana, misalnya berhenti setelah dua video atau setelah alarm berbunyi.",
+      basis: "Makalah Bab II A.2 dan E.1."
+    },
+    {
       sec: "D", who: "Paisal", slides: ["s20"],
-      q: "Empat pertanyaan tabayyun itu dari kitab apa?",
-      short: "Empat pertanyaan itu rumusan kami dari prinsip tabayyun dalam QS. Al-Hujurat ayat 6, ditambah pesan Muhammad bin Sirin tentang memeriksa sumber ilmu. Tujuannya membuat prinsip itu mudah dipraktikkan di kelas.",
-      more: "Guru boleh menyesuaikan bahasanya dengan usia anak. Untuk anak SD, cukup dua pertanyaan: siapa yang berbicara, dan apakah ustadz kita setuju.",
-      basis: "Makalah Bab II E.1."
+      q: "Apakah anak yang sering main HP bisa disebut kecanduan?",
+      short: "Kami tidak memakai kata kecanduan, karena itu istilah yang butuh penilaian ahli. Yang kami tekankan adalah dampak yang terlihat sehari-hari: waktu habis tanpa terasa, sulit fokus, dan ibadah terabaikan. Itu sudah cukup menjadi alasan guru dan orang tua membuat batasan.",
+      more: "Penelitian Setiadi dan kawan-kawan mencatat anak yang memakai gadget berlebihan cenderung mengabaikan ibadah dan kurang berinteraksi dengan lingkungannya.",
+      basis: "Makalah Bab I A dan II E.1; Setiadi dkk. (2024)."
+    },
+    {
+      sec: "D", who: "Paisal", slides: ["s21"],
+      q: "Selain gamifikasi, contoh lain memakai ekosistem digital itu apa saja?",
+      short: "Ada tiga contoh lain di slide. Daftar tontonan pilihan guru, yang meniru cara kerja rekomendasi. Tantangan setor bacaan di grup kelas, yang meniru platform. Grafik kemajuan bacaan, yang meniru data dan statistik aplikasi. Intinya, anak belajar dengan bentuk yang sudah akrab baginya.",
+      more: "Ketiga contoh ini usulan kami. Penelitian yang kami kutip baru membahas gamifikasi.",
+      basis: "Makalah Bab II E.2."
     },
     {
       sec: "D", who: "Paisal", slides: ["s21"],
@@ -291,7 +305,7 @@ window.QA = {
     {
       sec: "E", who: "Aldo dan Paisal", slides: ["s24", "s25"],
       q: "Dari semua solusi itu, mana yang paling mudah dimulai besok?",
-      short: "Menurut kami, dua hal. Untuk guru, membahas satu konten agama yang sedang ramai dengan empat pertanyaan tabayyun. Untuk orang tua, menyepakati waktu tanpa HP setelah magrib sampai selesai mengaji. Keduanya tidak butuh biaya dan tidak butuh aplikasi.",
+      short: "Menurut kami, dua hal. Untuk guru, menjelaskan siklus algoritma dengan contoh video yang biasa ditonton anak, lalu menyepakati batas berhenti. Untuk orang tua, menyepakati waktu tanpa HP setelah magrib sampai selesai mengaji. Keduanya tidak butuh biaya dan tidak butuh aplikasi.",
       more: "Langkah lembaga, seperti meminta izin orang tua sebelum mengunggah foto anak, juga bisa dimulai minggu ini.",
       basis: "Makalah Bab II E, Tabel 2."
     }

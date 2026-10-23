@@ -216,5 +216,20 @@
     final: (slide, k, ctx) => netCanvas(slide, ctx, !ctx.mirror, { x0: 20, x1: 1900, n: 70, dark: true, seed: 77 }),
   };
 
+  /* ---------- s20: titik berputar di lingkaran tanpa ujung ---------- */
+  FX.s20 = {
+    enter(slide, tl, ctx) {
+      const d = slide.querySelector('.lp-dot circle'), path = slide.querySelector('#s20Path');
+      ctx.targets.add(d);
+      if (!hasMP) return;
+      tl.add(() => loops(ctx, [gsap.to(d, { motionPath: { path, align: path, alignOrigin: [0.5, 0.5] }, duration: 2.4, ease: 'none', repeat: -1 })]), 1);
+    },
+    final(slide, k, ctx) {
+      const d = slide.querySelector('.lp-dot circle'), path = slide.querySelector('#s20Path');
+      ctx.targets.add(d);
+      if (hasMP) gsap.set(d, { motionPath: { path, align: path, alignOrigin: [0.5, 0.5], start: 0.12, end: 0.12 } });
+    },
+  };
+
   window.SLIDE_FX = FX;
 })();

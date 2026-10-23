@@ -488,3 +488,47 @@
 .s16-post .pic { height: 250px; }
 .s16-two { right: 600px; grid-template-columns: 1fr; gap: 14px; bottom: 100px; }
 .s16-two > div { padding: 18px 28px; }
+
+/* ---------- s20 (revisi): siklus yang menjerat ---------- */
+.s20-loop { position: absolute; left: 150px; top: 380px; width: 520px; height: 520px; }
+.s20-loop svg { width: 520px; height: 520px; overflow: visible; }
+.lp-bg { fill: none; stroke: var(--line); stroke-width: 34; }
+.lp-on { fill: none; stroke: var(--blue); stroke-width: 8; stroke-linecap: round; stroke-dasharray: 18 14; }
+.lp-dot circle { fill: var(--sky); filter: drop-shadow(0 0 14px rgba(91,184,255,.9)); }
+.lp-c { position: absolute; left: 110px; top: 160px; width: 300px; text-align: center; }
+.lp-c svg { width: 80px; height: 80px; fill: none; stroke: var(--deep); stroke-width: 1.6; }
+.lp-c b { display: block; font: 800 36px/1.1 var(--f-sans); color: var(--deep); margin-top: 8px; }
+.lp-c span { display: block; font: 500 24px/1.3 var(--f-sans); color: var(--ink-2); margin-top: 6px; }
+.s20-q { left: 800px; top: 400px; gap: 20px; }
+.s20-q li { align-items: flex-start; font-size: 30px; }
+.s20-q .ck { font: 800 28px/56px var(--f-sans); color: #fff; text-align: center; display: block; }
+.s20-q b { display: block; font: 800 31px/1.2 var(--f-sans); color: var(--ink); }
+.s20-q p { margin: 6px 0 0; font: 400 25px/1.35 var(--f-sans); color: var(--ink-2); }
+.s20-ayat { left: 800px; right: 120px; width: auto; top: 870px; padding: 14px 30px; display: flex; align-items: center; gap: 26px; }
+.s20-ayat .arab { font-size: 38px; white-space: nowrap; }
+.s20-ayat figcaption { margin: 0; text-align: left; font-size: 21px; }
+/* ---------- s21 (revisi): contoh memanfaatkan ekosistem ---------- */
+.s21-def { top: 400px; width: 1500px; font-size: 30px; }
+.s21-ex { position: absolute; left: 120px; right: 120px; top: 500px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.s21-ex > div { position: relative; background: #fff; border-radius: var(--r-l); padding: 26px 28px 28px; min-height: 300px; box-shadow: 0 24px 60px rgba(11,42,143,.10), inset 0 0 0 2px var(--line); }
+.s21-ex .tg { display: inline-block; font: 700 18px/1 var(--f-mono); color: var(--blue); background: var(--ice); padding: 8px 12px; border-radius: 999px; }
+.s21-ex svg { display: block; width: 58px; height: 58px; margin: 22px 0 12px; fill: none; stroke: var(--blue); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.s21-ex b { display: block; font: 800 30px/1.15 var(--f-sans); color: var(--ink); }
+.s21-ex p { font: 400 24px/1.38 var(--f-sans); color: var(--ink-2); margin: 10px 0 0; }
+.s21-ex .hot { background: linear-gradient(160deg, var(--blue), var(--deep)); box-shadow: 0 24px 60px rgba(31,91,255,.35); }
+.s21-ex .hot b, .s21-ex .hot p { color: #fff; } .s21-ex .hot svg { stroke: var(--sky-2); } .s21-ex .hot .tg { background: rgba(255,255,255,.15); color: #fff; }
+.s21-rambu { left: 120px; right: 120px; top: 840px; padding: 18px 34px; display: flex; align-items: center; gap: 34px; }
+.s21-rambu .arab { margin: 0; font-size: 42px; white-space: nowrap; }
+.s21-rambu .rb { margin: 0; font: 500 23px/1.4 var(--f-sans); color: var(--on-deep-2); }
+.s21-rambu .rb b { color: #fff; }
+.s20-loop { left: 190px; top: 370px; transform: scale(.86); transform-origin: 0 0; }
+.s20-q { top: 390px; gap: 16px; }
+.s20-q li { padding: 20px 26px; }
+.s20-ayat { left: 120px; right: auto; width: 640px; top: 840px; flex-direction: column; gap: 6px; padding: 16px 26px; }
+.s20-ayat figcaption { text-align: center; }
+.s21-def { top: 385px; }
+.s21-ex { top: 480px; }
+.s21-ex > div { min-height: 0; padding: 22px 26px 24px; }
+.s21-ex svg { margin: 16px 0 10px; width: 50px; height: 50px; }
+.s21-rambu { top: 870px; }
+.slide[data-id="s20"] .src { left: 800px; }
