@@ -197,7 +197,7 @@ window.DECK = {
     },
     {
       id: "s18", chapter: 3, speaker: "Aldo", sec: 50, steps: 3,
-      title: "Satu ekosistem, tantangannya berbeda di tiap tempat",
+      title: "Tantangannya berbeda di tiap tempat",
       purpose: "Merangkum perbedaan ketiga lembaga dalam satu tabel.",
       script: "Inilah ringkasannya. Dari sisi waktu belajar agama, sekolah negeri hanya punya beberapa jam pelajaran, sekolah Islam lebih banyak, dan TPQ satu sampai dua jam di sore hari. Dari sisi pemakaian teknologi, sekolah negeri bergantung pada fasilitas dan kemampuan guru, sekolah swasta paling cepat, terutama untuk promosi di media sosial, dan TPQ umumnya baru memakai grup WhatsApp. Yang paling menonjol, sekolah negeri menghadapi kelas yang besar dan beragam, sekolah swasta menghadapi persaingan citra sampai gurunya ikut membuat konten promosi, dan TPQ menghadapi guru sukarela yang kekurangan waktu.",
       cue: "Klik tiga kali untuk memunculkan baris satu per satu. Baris ketiga berwarna biru.",
