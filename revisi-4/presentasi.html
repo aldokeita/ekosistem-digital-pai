@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Presentasi PAI">
+<meta name="theme-color" content="#061A5C">
+<link rel="apple-touch-icon" href="assets/img/icon-180.png">
+<link rel="icon" href="assets/img/icon-180.png">
+<title>Ekosistem Digital dan Tantangan Pendidikan Agama Islam</title>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/deck.css">
+<link rel="stylesheet" href="assets/css/slides.css">
+<link rel="stylesheet" href="assets/css/editor.css">
+</head>
+<body>
+
+<!-- Ikon garis (dipakai lewat <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+    <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="M10 9v6l5-3z"/></symbol>
+    <symbol id="i-algo" viewBox="0 0 24 24"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.5 4.5 5.5v6c0 4.6 3.2 8.6 7.5 10 4.3-1.4 7.5-5.4 7.5-10v-6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.5C10 5 7 4.5 3.5 4.5v14c3.5 0 6.5.5 8.5 2 2-1.5 5-2 8.5-2v-14C17 4.5 14 5 12 6.5zM12 6.5v14"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 2.8C19.5 15.4 12 20 12 20z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+    <symbol id="i-rank" viewBox="0 0 24 24"><path d="M3 20h18M5 20v-6h4v6M10 20V9h4v11M15 20v-8h4v8"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 5 5 10-11"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-net" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.8 7.2 6.2 15.8M13.2 7.2l4.6 8.6M7.5 18h9"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-school" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11M9.5 21v-5h5v5"/><path d="M12 5V2.5h3"/><circle cx="12" cy="11.5" r="1.6"/></symbol>
+    <symbol id="i-mosque" viewBox="0 0 24 24"><path d="M3 21h18M5 21v-8M19 21v-8M4 13h2M18 13h2M8 21v-6a4 4 0 0 1 8 0v6M12 6a4 4 0 0 1 4 4H8a4 4 0 0 1 4-4zM12 6V3"/><path d="M11 21v-3h2v3"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5M5.5 9.5V20h13V9.5M10 20v-5h4v5"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V5l8-2v18M12 7h8v14M3 21h18M7 8h2M7 12h2M7 16h2M15 11h2M15 15h2"/></symbol>
+    <symbol id="i-battery" viewBox="0 0 24 24"><rect x="2.5" y="7.5" width="17" height="9" rx="2"/><path d="M21.5 10.5v3M5.5 10.5v3"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="7.5" width="16" height="12" rx="3.5"/><path d="M12 7.5V4M9 13h0M15 13h0M9.5 16.5h5"/><circle cx="12" cy="3.5" r="1"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 8"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="m8.2 10.8 7.6-4.1M8.2 13.2l7.6 4.1"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></symbol>
+    <symbol id="i-sunset" viewBox="0 0 24 24"><path d="M5 17a7 7 0 0 1 14 0M2 17h20M12 3v4M4.2 9.2l1.8 1.3M19.8 9.2 18 10.5M7 21h10"/></symbol>
+    <symbol id="i-comment" viewBox="0 0 24 24"><path d="M4 4.5h16v11H11l-4.5 4v-4H4z"/><path d="M8 8.5h8M8 11.5h5"/></symbol>
+    <symbol id="i-like" viewBox="0 0 24 24"><path d="M7 10.5v10H3.5v-10zM7 10.5l4-7.5a2.5 2.5 0 0 1 2.5 2.8L13 9.5h6a2 2 0 0 1 2 2.4l-1.6 7A2 2 0 0 1 17.4 20.5H7"/></symbol>
+    <symbol id="i-signal" viewBox="0 0 24 24"><path d="M4 20v-3M9 20v-7M14 20v-11M19 20V4"/></symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24"><path d="M2 9.5 12 5l10 4.5-10 4.5z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5M22 9.5v5"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1"/></symbol>
+    <symbol id="i-rule" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M10 7H6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v3l3-3v-5a2 2 0 0 0-1-2zM20 7h-4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v3l3-3v-5a2 2 0 0 0-1-2z"/></symbol>
+    <symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3c0 5 5 6 5 9s-5 4-5 9M17 3c0 5-5 6-5 9s5 4 5 9"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+  </defs>
+</svg>
+
+<div id="viewport">
+<div id="stage">
+
+<!-- ================= BAGIAN 1 · EKOSISTEM DIGITAL ================= -->
+
+<section class="slide" data-id="s01" data-chrome="cover">
+  <canvas class="cover-net" width="1920" height="1080"></canvas>
+  <div class="orb" style="width:900px;height:900px;right:-160px;top:-220px"></div>
+  <div class="orb b" style="width:700px;height:700px;right:420px;bottom:-380px"></div>
+  <div class="cover-phone" aria-hidden="true">
+    <svg class="orbit" viewBox="0 0 900 900">
+      <ellipse class="orbit-path" id="orbitPath" cx="450" cy="450" rx="400" ry="150" transform="rotate(-18 450 450)"/>
+      <ellipse class="orbit-path b" cx="450" cy="450" rx="330" ry="360" transform="rotate(24 450 450)"/>
+    </svg>
+    <div class="ph">
+      <div class="ph-screen">
+        <div class="feed loop-feed">
+          <i class="fc a"></i><i class="fc b"></i><i class="fc c"></i><i class="fc a"></i><i class="fc b"></i><i class="fc c"></i>
+        </div>
+      </div>
+    </div>
+    <div class="sat s1"><svg><use href="#i-school"/></svg></div>
+    <div class="sat s2"><svg><use href="#i-mosque"/></svg></div>
+    <div class="sat s3"><svg><use href="#i-home"/></svg></div>
+    <div class="sat s4"><svg><use href="#i-play"/></svg></div>
+    <div class="sat s5"><svg><use href="#i-book"/></svg></div>
+  </div>
+  <div class="cover-text">
+    <p class="kicker" data-a="scramble">LITERASI DIGITAL PAI · PERTEMUAN 3</p>
+    <h1 class="display" data-a="words">Ekosistem Digital dan Tantangan <em>Pendidikan Agama Islam</em></h1>
+    <p class="lead cover-sub" data-a="mask">di Sekolah Negeri, Sekolah Swasta, dan Lembaga Pendidikan Al-Qur'an</p>
+  </div>
+  <div class="cover-meta" data-a="stagger" data-st="0.08">
+    <div><span class="mk">Disusun oleh</span><b>Aldo Pratama Joani</b><span class="mono">2686130003</span></div>
+    <div><span class="mk">&nbsp;</span><b>Paisal</b><span class="mono">2686130006</span></div>
+    <div><span class="mk">Dosen pengampu</span><b>Dr. Muhamad Ali, M.Pd.I</b><span>&nbsp;</span></div>
+    <div><span class="mk">Magister PAI</span><b>Pascasarjana STAI Baturaja</b><span>2026</span></div>
+  </div>
+</section>
+
+<section class="slide" data-id="s02" data-tr="zoom">
+  <div class="dots-bg"></div>
+  <p class="kicker" data-a="up">Data anak dan gadget</p>
+  <h1 class="h1 s02-title" data-a="words">Lebih dari separuh anak usia 5–6 tahun <em>sudah memakai HP</em></h1>
+  <div class="s02-main">
+    <div class="s02-big">
+      <div class="v num"><span data-a="count" data-to="58.25" data-dec="2">58,25</span><small>%</small></div>
+      <p class="k" data-a="up">anak usia 5–6 tahun sudah memakai HP, dan <b>51,19%</b> sudah mengakses internet</p>
+      <p class="note" data-a="fade">BPS, Profil Anak Usia Dini 2024</p>
+    </div>
+    <div class="s02-wf">
+      <div class="waffle kids" data-n="100" data-on="58" data-a="waffle" data-dur="1.6"></div>
+      <p class="wf-cap" data-a="up">Dari setiap <b>100 anak</b> usia 5–6 tahun, sekitar <b>58 anak</b> sudah memakai HP</p>
+    </div>
+  </div>
+  <div class="s02-strip" data-a="cards" data-st="0.12">
+    <div><span class="sv num">80,66%</span><span class="sk">penduduk Indonesia memakai internet</span><span class="ss">APJII 2025</span></div>
+    <div><span class="sv num">79,73%</span><span class="sk">anak usia 12 tahun ke bawah memakai internet</span><span class="ss">APJII 2025, laporan orang tua</span></div>
+    <div><span class="sv num">39,71%</span><span class="sk">seluruh anak usia dini sudah memakai HP</span><span class="ss">BPS 2024</span></div>
+  </div>
+</section>
+
+<section class="slide mist" data-id="s03">
+  <div class="orb" style="width:700px;height:700px;left:-260px;bottom:-300px;opacity:.35"></div>
+  <p class="kicker" data-a="up">Arah pembahasan</p>
+  <h1 class="h1" data-a="words">Ada <em>empat pertanyaan</em> yang akan kami jawab hari ini</h1>
+  <div class="s03-cards" data-a="cards" data-st="0.14">
+    <div class="qc"><span class="qn">1</span><svg class="ico"><use href="#i-net"/></svg><p>Apa itu ekosistem digital?</p></div>
+    <div class="qc"><span class="qn">2</span><svg class="ico"><use href="#i-bolt"/></svg><p>Apa saja tantangannya bagi Pendidikan Agama Islam?</p></div>
+    <div class="qc"><span class="qn">3</span><svg class="ico"><use href="#i-school"/></svg><p>Apa bedanya di sekolah negeri, sekolah swasta, dan TPQ?</p></div>
+    <div class="qc hot"><span class="qn">4</span><svg class="ico"><use href="#i-heart"/></svg><p>Solusi apa yang bisa kita lakukan bersama?</p></div>
+  </div>
+</section>
+
+<section class="slide" data-id="s04">
+  <p class="kicker" data-a="up">Pengertian</p>
+  <h1 class="h1 s04-title" data-a="words">Ekosistem digital itu seperti <em>pasar yang tidak pernah tutup</em></h1>
+  <p class="lead s04-def" data-a="up">Ekosistem digital adalah jaringan yang saling terhubung antara <b>manusia, perangkat, platform, algoritma, dan data</b>.</p>
+  <ul class="s04-list" data-a="stagger" data-st="0.18">
+    <li><span class="b1">Barangnya selalu ada.</span> Video, game, dan konten tidak pernah habis.</li>
+    <li><span class="b1">Penjualnya pandai membaca selera.</span> Aplikasi tahu apa yang kita sukai.</li>
+    <li><span class="b1">Pembelinya datang kapan saja,</span> termasuk anak-anak kita.</li>
+  </ul>
+  <div class="s04-market" aria-hidden="true">
+    <svg viewBox="0 0 760 700">
+      <defs>
+        <linearGradient id="awn" x1="0" x2="1"><stop offset="0" stop-color="#1F5BFF"/><stop offset="1" stop-color="#0B2A8F"/></linearGradient>
+      </defs>
+      <g data-a="tilt">
+        <rect x="70" y="210" width="620" height="430" rx="26" fill="#F4F7FF" stroke="#B9CCFA" stroke-width="4"/>
+        <path d="M40 210 L90 110 H670 L720 210 Z" fill="url(#awn)"/>
+        <g fill="#fff" opacity=".9"><path d="M150 110 L130 210 H200 L210 110Z"/><path d="M330 110 L320 210 H390 L390 110Z"/><path d="M510 110 L510 210 H580 L570 110Z"/></g>
+        <path d="M40 210 q42 46 84 0 q42 46 84 0 q42 46 84 0 q42 46 84 0 q42 46 84 0 q42 46 84 0 q42 46 84 0 q41 46 82 0" fill="#0B2A8F"/>
+      </g>
+      <g class="apps" data-a="pops" data-st="0.07">
+        <rect x="120" y="330" width="120" height="120" rx="28" fill="#1F5BFF"/>
+        <rect x="270" y="330" width="120" height="120" rx="28" fill="#5BB8FF"/>
+        <rect x="420" y="330" width="120" height="120" rx="28" fill="#0B2A8F"/>
+        <rect x="120" y="480" width="120" height="120" rx="28" fill="#A9D4FF"/>
+        <rect x="270" y="480" width="120" height="120" rx="28" fill="#1F5BFF"/>
+        <rect x="420" y="480" width="120" height="120" rx="28" fill="#5BB8FF"/>
+      </g>
+      <g fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" data-a="fade">
+        <path d="M167 368v44l36-22z"/><circle cx="330" cy="390" r="24"/><path d="M450 372h60M450 392h60M450 412h36"/>
+        <path d="M150 540h60M180 510v60"/><path d="M305 515l25 50 25-50"/><path d="M455 520h50v40h-50z"/>
+      </g>
+      <g class="sign" data-a="swing">
+        <rect x="560" y="300" width="170" height="250" rx="22" fill="#0A1633"/>
+        <text x="645" y="352" text-anchor="middle" class="sg-t">BUKA</text>
+        <text x="645" y="410" text-anchor="middle" class="sg-n">24</text>
+        <text x="645" y="446" text-anchor="middle" class="sg-t">JAM</text>
+        <circle cx="645" cy="495" r="32" fill="none" stroke="#5BB8FF" stroke-width="5"/>
+        <line class="hand-m loop-spin" x1="645" y1="495" x2="645" y2="472" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+        <line class="hand-h loop-spin-s" x1="645" y1="495" x2="661" y2="495" stroke="#5BB8FF" stroke-width="5" stroke-linecap="round"/>
+      </g>
+    </svg>
+  </div>
+  <p class="src">Moore (1993), Harvard Business Review · Nata (2020), Pendidikan Islam di Era Digital · makalah Bab II A.1</p>
+</section>
+
+<section class="slide" data-id="s05">
+  <div class="dots-bg"></div>
+  <p class="kicker" data-a="up">Unsur ekosistem digital</p>
+  <h1 class="h1" data-a="words">Ada <em>empat unsur</em> yang bekerja bersama di sekitar anak</h1>
+  <div class="s05-wrap">
+    <svg class="s05-links" viewBox="0 0 1680 640">
+      <g class="lk" data-a="draw" data-st="0.12">
+        <path d="M840 320 C 640 320, 520 150, 330 140"/>
+        <path d="M840 320 C 1040 320, 1160 150, 1350 140"/>
+        <path d="M840 320 C 640 320, 520 500, 330 510"/>
+        <path d="M840 320 C 1040 320, 1160 500, 1350 510"/>
+      </g>
+      <g class="pulses"><circle r="9"/><circle r="9"/><circle r="9"/><circle r="9"/></g>
+    </svg>
+    <div class="s05-kid" data-a="pop"><svg><use href="#i-user"/></svg><span>Anak</span></div>
+    <div class="s05-n n1" data-a="left"><span class="ic"><svg><use href="#i-phone"/></svg></span><div><b>Perangkat</b><p>HP, tablet, dan smart TV. Pintu masuk anak ke dunia digital.</p></div></div>
+    <div class="s05-n n2" data-a="right"><span class="ic"><svg><use href="#i-play"/></svg></span><div><b>Platform</b><p>YouTube, TikTok, game online, dan grup WhatsApp.</p></div></div>
+    <div class="s05-n n3" data-a="left"><span class="ic"><svg><use href="#i-algo"/></svg></span><div><b>Algoritma</b><p>Aturan dalam aplikasi yang memilih tontonan berikutnya.</p></div></div>
+    <div class="s05-n n4" data-a="right"><span class="ic"><svg><use href="#i-db"/></svg></span><div><b>Data</b><p>Setiap tontonan, like, dan pencarian anak tercatat.</p></div></div>
+  </div>
+  <p class="src">Makalah Bab II A.2 · perangkat yang saling terhubung disebut Internet of Things (IoT)</p>
+</section>
+
+<section class="slide" data-id="s06" data-tr="push">
+  <p class="kicker" data-a="up">Cara kerja algoritma</p>
+  <h1 class="h1 s06-title" data-a="words">Algoritma memilihkan tontonan berikutnya, <em>tanpa ditanya</em></h1>
+  <div class="s06-phone" data-a="tilt">
+    <div class="ph-body">
+      <div class="ph-scr">
+        <div class="vid v-now"><span class="lbl">Video kucing lucu</span><i class="prog loop-prog"></i></div>
+        <div class="vid v-next" data-step="2"><span class="lbl">Kucing lagi</span></div>
+        <div class="vid v-next2" data-step="3"><span class="lbl">Kucing lagi, dan lagi</span></div>
+      </div>
+    </div>
+  </div>
+  <ol class="s06-steps">
+    <li data-step="1"><span class="sn">1</span><div><b>Anak menonton video kucing sampai habis.</b><p>Aplikasi mencatat berapa lama ia menonton.</p></div></li>
+    <li data-step="2"><span class="sn">2</span><div><b>Algoritma menyimpulkan: "anak ini suka kucing".</b><p>Video serupa langsung disiapkan.</p></div></li>
+    <li data-step="3"><span class="sn">3</span><div><b>Video berikutnya muncul sendiri, terus-menerus.</b><p>Tujuannya satu: membuat pengguna bertahan selama mungkin.</p></div></li>
+  </ol>
+  <p class="src">Makalah Bab II A.2 butir c</p>
+</section>
+
+<section class="slide mist" data-id="s07" data-tr="iris">
+  <p class="kicker" data-a="up">Siklus ekosistem digital</p>
+  <h1 class="h1 s07-title" data-a="words">Keempat unsur membentuk <em>siklus</em> yang membuat anak sulit berhenti</h1>
+  <div class="s07-cycle">
+    <svg viewBox="0 0 820 820" class="cyc">
+      <circle class="ring-bg" cx="410" cy="410" r="300"/>
+      <circle class="ring-on" cx="410" cy="410" r="300" data-a="draw" data-dur="1.6" transform="rotate(-90 410 410)"/>
+      <path id="cycPath" d="M410 110 a300 300 0 1 1 -0.1 0" fill="none" stroke="none"/>
+      <g class="cyc-pulse"><circle r="13"/><circle r="9"/><circle r="9"/></g>
+      <g class="arrows" data-a="fade"><path d="M690 300 l14 30 l22 -24"/><path d="M520 690 l-32 6 l18 26"/><path d="M130 520 l-14 -30 l-22 24"/><path d="M300 130 l32 -6 l-18 -26"/></g>
+    </svg>
+    <div class="s07-c" data-a="zoom"><b>Anak terus menonton</b><span>semakin lama, semakin tepat tebakan aplikasi</span></div>
+    <div class="cn c1" data-a="pop"><svg><use href="#i-phone"/></svg><b>Perangkat</b><span>merekam aktivitas</span></div>
+    <div class="cn c2" data-a="pop"><svg><use href="#i-db"/></svg><b>Data</b><span>terkumpul makin banyak</span></div>
+    <div class="cn c3" data-a="pop"><svg><use href="#i-algo"/></svg><b>Algoritma</b><span>menebak selera anak</span></div>
+    <div class="cn c4" data-a="pop"><svg><use href="#i-play"/></svg><b>Platform</b><span>menyajikan tontonan</span></div>
+  </div>
+  <div class="s07-side">
+    <p class="lead" data-a="up">Setiap putaran membuat tontonan berikutnya terasa makin pas.</p>
+    <div class="caveat" data-a="up"><div><p class="label">Inilah yang dihadapi guru agama setiap hari.</p><p class="small">Anak masuk kelas atau TPQ dengan perhatian yang sudah terbiasa dimanjakan oleh siklus ini.</p></div></div>
+  </div>
+  <p class="src">Makalah Bab II A.2</p>
+</section>
+
+<section class="slide" data-id="s08">
+  <div class="dots-bg"></div>
+  <p class="kicker" data-a="up">Tempat anak belajar agama</p>
+  <h1 class="h1" data-a="words">Anak Muslim umumnya belajar agama di <em>tiga tempat</em></h1>
+  <div class="s08-day" aria-hidden="true">
+    <svg viewBox="0 0 1680 200">
+      <path class="arc" d="M60 180 C 460 50, 1220 50, 1620 180" data-a="draw" data-dur="1.4"/>
+      <path id="dayArc" d="M60 180 C 460 50, 1220 50, 1620 180" fill="none" stroke="none"/>
+      <g class="traveler"><circle r="26"/><use href="#i-phone" x="-15" y="-15" width="30" height="30"/></g>
+    </svg>
+    <span class="tm t1">Pagi</span><span class="tm t2">Sore</span><span class="tm t3">Malam</span>
+  </div>
+  <div class="s08-cols" data-a="cards" data-st="0.15">
+    <div class="pc1">
+      <span class="ic"><svg><use href="#i-school"/></svg></span>
+      <h3>Sekolah negeri</h3>
+      <p>PAI dan Budi Pekerti sebagai mata pelajaran wajib.</p>
+      <p class="fact"><b class="num">±3 JP</b> per minggu di kelas I SD (108 JP per tahun)</p>
+    </div>
+    <div class="pc1">
+      <span class="ic"><svg><use href="#i-building"/></svg></span>
+      <h3>Sekolah swasta</h3>
+      <p>Sekolah Islam menambah jam agama dan tahfiz. Sekolah swasta umum bergantung pada adanya guru seagama.</p>
+    </div>
+    <div class="pc1">
+      <span class="ic"><svg><use href="#i-mosque"/></svg></span>
+      <h3>Lembaga pendidikan Al-Qur'an</h3>
+      <p>TKQ, TPQ, dan rumah tahfiz, biasanya sore hari.</p>
+      <p class="fact"><b class="num">177.938</b> lembaga terdata di Kemenag (Juli 2022)</p>
+    </div>
+  </div>
+  <p class="src">UU 20/2003 Pasal 12 · Permendikbudristek 12/2024 Lampiran II · PP 55/2007 Pasal 24 · NU Online (29/7/2022) · makalah Bab II B</p>
+</section>
+
+<!-- ================= BAGIAN 2 · LIMA TANTANGAN ================= -->
+
+<section class="slide deep" data-id="s09" data-tr="shutter">
+  <svg class="net s09-net" data-w="1920" data-h="1080" data-nodes="34" data-seed="41" data-tone="deep" data-a="net"></svg>
+  <div class="giant" data-a="zoom">5</div>
+  <p class="kicker" data-a="scramble">BAGIAN 2</p>
+  <h1 class="display s09-t" data-a="words">Lima tantangan yang dirasakan <em>semua tempat belajar agama</em></h1>
+  <div class="s09-chips" data-a="cards" data-st="0.1">
+    <span><svg><use href="#i-eye"/></svg>Perhatian anak</span>
+    <span><svg><use href="#i-quote"/></svg>Sumber ilmu agama</span>
+    <span><svg><use href="#i-comment"/></svg>Adab di dunia maya</span>
+    <span><svg><use href="#i-lock"/></svg>Data anak</span>
+    <span><svg><use href="#i-signal"/></svg>Akses dan kemampuan</span>
+  </div>
+</section>
+
+<section class="slide" data-id="s10" data-tr="zoom">
+  <div class="dots-bg"></div>
+  <p class="kicker tno" data-a="up"><b>1</b> / 5 · Perhatian</p>
+  <h1 class="h1 s10-title" data-a="words">Perhatian anak <em>direbut oleh layar</em></h1>
+  <div class="s10-vs">
+    <div class="vc fast" data-a="left">
+      <span class="vi"><svg><use href="#i-bolt"/></svg></span>
+      <h3>Di layar</h3>
+      <p>Video pendek selesai dalam hitungan detik, lalu langsung diganti video baru.</p>
+      <div class="ticks loop-ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="vs-badge" data-a="pop">VS</div>
+    <div class="vc slow" data-a="right">
+      <span class="vi"><svg><use href="#i-hourglass"/></svg></span>
+      <h3>Saat mengaji</h3>
+      <p>Anak perlu sabar mengulang satu baris bacaan berkali-kali sampai benar.</p>
+      <div class="sand"><i class="loop-sand"></i></div>
+    </div>
+  </div>
+  <div class="s10-fact" data-a="tilt">
+    <span class="fv num">14</span>
+    <p><b>negara</b> memberi bukti bahwa HP yang berada di dekat siswa saja sudah dapat mengganggu konsentrasi belajar.</p>
+  </div>
+  <p class="s10-note" data-a="up">Larangan membawa HP memang perlu, tetapi larangan hanya berlaku di dalam kelas.</p>
+  <p class="src">UNESCO, Global Education Monitoring Report 2023 · Setiadi dkk. (2024) · Marsinah dan Nurhasanah (2023) · makalah Bab II C.1</p>
+</section>
+
+<section class="slide" data-id="s11">
+  <p class="kicker tno" data-a="up"><b>2</b> / 5 · Sumber ilmu agama</p>
+  <h1 class="h1 s11-title" data-a="words">Anak kini bertanya agama kepada layar. <em>Siapa gurunya?</em></h1>
+  <div class="s11-chat" data-a="tilt">
+    <div class="ph-body">
+      <div class="ph-scr chat">
+        <div class="bub me" data-a="right" data-delay="0.6">Apa hukumnya …?</div>
+        <div class="bub you" data-a="left" data-delay="0.9"><span class="who"><svg><use href="#i-play"/></svg>Ustadz viral</span>Jawabannya begini, ikuti saja!</div>
+        <div class="bub you ai" data-a="left" data-delay="1.2"><span class="who"><svg><use href="#i-bot"/></svg>Chatbot AI</span>Berikut jawaban lengkapnya dalam 3 detik.</div>
+        <div class="typing loop-typing" data-a="fade" data-delay="1.4"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </div>
+  <div class="s11-right">
+    <p class="lead" data-a="up">Jawabannya cepat dan terdengar meyakinkan, tetapi <b>tidak selalu jelas dari mana ilmunya</b>.</p>
+    <figure class="qcard" data-a="mask-up">
+      <p class="arab">إِنَّ هٰذَا الْعِلْمَ دِينٌ، فَانْظُرُوا عَمَّنْ تَأْخُذُونَ دِينَكُمْ</p>
+      <figcaption>"Sesungguhnya ilmu ini adalah agama, maka perhatikanlah dari siapa kalian mengambil agama kalian."<span>Muhammad bin Sirin, dalam Muqaddimah Shahih Muslim</span></figcaption>
+    </figure>
+  </div>
+  <p class="src">Rifdillah dkk. (2024) · Al-Aqsha dkk. (2026) · Bunt (2018), Hashtag Islam · makalah Bab II C.2</p>
+</section>
+
+<section class="slide" data-id="s12" data-tr="push">
+  <div class="dots-bg"></div>
+  <p class="kicker tno" data-a="up"><b>3</b> / 5 · Adab</p>
+  <h1 class="h1 s12-title" data-a="words">Adab anak diuji setiap hari <em>di kolom komentar</em></h1>
+  <div class="s12-a">
+    <p class="lbl" data-a="up">Kesopanan warganet, 32 negara</p>
+    <div class="rank32" data-a="pops" data-st="0.025"></div>
+    <p class="rk" data-a="up">Indonesia di peringkat <b class="num">29</b> dari 32, terendah di Asia Tenggara</p>
+    <p class="note" data-a="fade">Microsoft, Digital Civility Index 2020</p>
+  </div>
+  <div class="s12-b">
+    <div class="waffle w45" data-n="100" data-on="45" data-a="waffle" data-dur="1.2"></div>
+    <div class="s12-bt">
+      <div class="v num"><span data-a="count" data-to="45">45</span><small>%</small></div>
+      <p>anak muda usia 14–24 tahun pernah mengalami perundungan siber</p>
+      <p class="note" data-a="fade">Survei U-Report UNICEF, 2.777 responden</p>
+    </div>
+  </div>
+  <div class="s12-h" data-a="mask-up">
+    <p class="arab">مَنْ كَانَ يُؤْمِنُ بِاللّٰهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ</p>
+    <p class="tr">"Siapa yang beriman kepada Allah dan hari akhir, hendaklah ia <b>berkata baik atau diam</b>." <span>HR. al-Bukhari no. 6018 dan Muslim no. 47</span></p>
+  </div>
+  <p class="src">CNN Indonesia (25/2/2021) · The Jakarta Post (9/8/2022) · makalah Bab II C.3</p>
+</section>
+
+<section class="slide" data-id="s13">
+  <p class="kicker tno" data-a="up"><b>4</b> / 5 · Data anak</p>
+  <h1 class="h1 s13-title" data-a="words">Foto dan data anak <em>mudah tersebar</em></h1>
+  <div class="s13-burst" aria-hidden="true">
+    <svg viewBox="0 0 760 640" class="burst">
+      <g class="rays"><path d="M380 320 L120 110"/><path d="M380 320 L640 100"/><path d="M380 320 L80 330"/><path d="M380 320 L690 340"/><path d="M380 320 L140 560"/><path d="M380 320 L620 570"/><path d="M380 320 L380 600"/></g>
+      <g class="scr"><rect x="70" y="60" width="100" height="100" rx="22"/><rect x="590" y="50" width="100" height="100" rx="22"/><rect x="30" y="280" width="100" height="100" rx="22"/><rect x="640" y="290" width="100" height="100" rx="22"/><rect x="90" y="510" width="100" height="100" rx="22"/><rect x="570" y="520" width="100" height="100" rx="22"/><rect x="330" y="560" width="100" height="70" rx="18"/></g>
+    </svg>
+    <div class="photo" data-a="pop"><svg><use href="#i-photo"/></svg><span>Foto kegiatan anak</span><small>nama lengkap · nilai · catatan perilaku</small></div>
+  </div>
+  <div class="s13-stats">
+    <div class="st" data-a="up"><span class="v num"><span data-a="count" data-to="16">16</span>%</span><p>negara yang secara tegas menjamin privasi data pendidikan lewat undang-undang</p></div>
+    <div class="st" data-a="up"><span class="v num"><span data-a="count" data-to="89">89</span>%</span><p>dari 163 aplikasi belajar yang direkomendasikan saat pandemi dapat memantau anak di luar jam sekolah</p></div>
+    <div class="law" data-a="tilt"><svg class="ico"><use href="#i-shield"/></svg><div><b>UU Pelindungan Data Pribadi, Pasal 25</b><p>Data anak wajib diproses secara khusus dan dengan persetujuan orang tua atau wali.</p></div></div>
+  </div>
+  <p class="src">UNESCO, GEM Report 2023 · UU No. 27 Tahun 2022 · PP No. 17 Tahun 2025 (PP Tunas) · makalah Bab II C.4</p>
+</section>
+
+<section class="slide mist" data-id="s14">
+  <p class="kicker tno" data-a="up"><b>5</b> / 5 · Akses dan kemampuan</p>
+  <h1 class="h1 s14-title" data-a="words">Akses internet dan kemampuan digital <em>belum merata</em></h1>
+  <div class="s14-bars">
+    <p class="lbl" data-a="up">Penduduk yang mengakses internet, 2025</p>
+    <div class="br"><span class="bk">Perkotaan</span><span class="bt"><i class="bf" style="width:82.72%" data-a="grow-x"></i></span><span class="bv num">82,72%</span></div>
+    <div class="br r2"><span class="bk">Perdesaan</span><span class="bt"><i class="bf" style="width:70.14%" data-a="grow-x"></i></span><span class="bv num">70,14%</span></div>
+    <div class="br r3"><span class="bk">Nasional</span><span class="bt"><i class="bf" style="width:77.63%" data-a="grow-x"></i></span><span class="bv num">77,63%</span></div>
+    <p class="note" data-a="fade">BPS, Statistik Telekomunikasi Indonesia 2025</p>
+  </div>
+  <div class="s14-gap" data-a="cards" data-st="0.15">
+    <div><span class="gi"><svg><use href="#i-grad"/></svg></span><p>Sebagian guru sudah terbiasa membuat <b>kuis online</b> dan konten belajar.</p></div>
+    <div><span class="gi b"><svg><use href="#i-book"/></svg></span><p>Sebagian lagi, terutama pengajar senior di TPQ, <b>masih belajar memakai aplikasi dasar</b>.</p></div>
+    <div class="hot"><p>Tidak jarang anak lebih mahir memakai teknologi daripada gurunya.</p></div>
+  </div>
+  <p class="src">BPS, dikutip GoodStats (1/9/2026) · makalah Bab II C.5</p>
+</section>
+
+<!-- ================= BAGIAN 3 · TIGA TEMPAT ================= -->
+
+<section class="slide" data-id="s15" data-tr="iris">
+  <div class="dots-bg"></div>
+  <p class="kicker" data-a="up"><svg class="kic"><use href="#i-school"/></svg> Sekolah negeri</p>
+  <h1 class="h1 s15-title" data-a="words">Di sekolah negeri, <em>waktunya sedikit</em> dan siswanya beragam</h1>
+  <div class="s15-week">
+    <p class="lbl" data-a="up">Pelajaran PAI dalam seminggu, kelas I SD</p>
+    <div class="wk" data-a="stagger" data-st="0.08">
+      <div><span>Sen</span><i></i></div><div><span>Sel</span><i class="pai">35'</i></div><div><span>Rab</span><i></i></div><div><span>Kam</span><i class="pai">70'</i></div><div><span>Jum</span><i></i></div>
+    </div>
+    <p class="wk-c" data-a="up"><b class="num">± 105 menit</b> per minggu (3 JP × 35 menit). Di SMP kelas VII–VIII: 2 JP × 40 menit per minggu, ditambah projek.</p>
+    <p class="note" data-a="fade">Contoh susunan hari. Jadwal tiap sekolah berbeda.</p>
+  </div>
+  <ul class="s15-pts" data-a="stagger" data-st="0.16">
+    <li><b>Materinya luas:</b> Al-Qur'an dan hadis, akidah, akhlak, fikih, dan sejarah Islam.</li>
+    <li><b>Kemampuannya beragam:</b> ada yang sudah lancar mengaji, ada yang belum mengenal huruf hijaiyah.</li>
+    <li class="q"><b>SE Mendikdasmen No. 18 Tahun 2026:</b> HP dibatasi selama kegiatan belajar. "Pembatasan itu bukan pelarangan."</li>
+  </ul>
+  <p class="src">Permendikbudristek 12/2024 Lampiran II · RMOL (14/7/2026) · makalah Bab II B.1 dan D</p>
+</section>
+
+<section class="slide" data-id="s16">
+  <p class="kicker" data-a="up"><svg class="kic"><use href="#i-building"/></svg> Sekolah swasta</p>
+  <h1 class="h1 s16-title" data-a="words">Di sekolah swasta, teknologi dipakai cepat, <em>risikonya ikut cepat</em></h1>
+  <div class="s16-faces" data-a="cards" data-st="0.14">
+    <div><h3>Sekolah Islam</h3><p>Jam agama dan program tahfiz lebih banyak. Hafalan dan kegiatan anak sering dilaporkan lewat aplikasi dan grup orang tua.</p></div>
+    <div><h3>Sekolah swasta umum</h3><p>Hak anak Muslim atas pelajaran PAI bergantung pada ada atau tidaknya guru yang seagama.</p></div>
+  </div>
+  <div class="s16-gal" aria-hidden="true">
+    <div class="gal" data-a="pops" data-st="0.05"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <span class="sh" data-a="pop"><svg><use href="#i-share"/></svg></span>
+  </div>
+  <div class="s16-two">
+    <div data-a="left"><span class="tg">Mudah difoto</span><p>hafalan, lomba, kegiatan</p></div>
+    <div class="hard" data-a="right"><span class="tg">Sulit difoto</span><p>kejujuran, keikhlasan</p></div>
+  </div>
+  <p class="src">UU 20/2003 Pasal 12 ayat (1) huruf a · makalah Bab II B.2 dan D</p>
+</section>
+
+<section class="slide" data-id="s17" data-tr="push">
+  <div class="s17-sky" aria-hidden="true"><div class="sun loop-sun"></div><div class="hill"></div><svg class="mosq"><use href="#i-mosque"/></svg></div>
+  <p class="kicker" data-a="up"><svg class="kic"><use href="#i-mosque"/></svg> Lembaga pendidikan Al-Qur'an</p>
+  <h1 class="h1 s17-title" data-a="words">Di TPQ, anak datang <em>sudah lelah</em>, gurunya mengabdi dengan sederhana</h1>
+  <div class="s17-pts" data-a="cards" data-st="0.14">
+    <div><span class="bat"><i class="loop-bat"></i></span><b>Belajar sore hari</b><p>Anak datang setelah seharian di sekolah, sering dalam keadaan lelah.</p></div>
+    <div><svg class="ico"><use href="#i-users"/></svg><b>Harus bertatap muka</b><p><i>Talaqqi</i> dan <i>musyafahah</i>: anak menyimak bacaan dan melihat gerak bibir guru secara langsung.</p></div>
+    <div><svg class="ico"><use href="#i-heart"/></svg><b>Guru sukarela</b><p>Imbalan kecil, waktu untuk mempelajari teknologi baru juga terbatas.</p></div>
+  </div>
+  <p class="src">PP No. 55 Tahun 2007 Pasal 24 · makalah Bab II B.3 dan D</p>
+</section>
+
+<section class="slide mist" data-id="s18">
+  <p class="kicker" data-a="up">Perbandingan</p>
+  <h1 class="h1" data-a="words">Satu ekosistem, <em>tiga wajah tantangan</em></h1>
+  <div class="s18-t">
+    <div class="th" data-a="stagger" data-st="0.1"><span></span><span><svg><use href="#i-school"/></svg>Sekolah negeri</span><span><svg><use href="#i-building"/></svg>Sekolah swasta</span><span><svg><use href="#i-mosque"/></svg>TPQ</span></div>
+    <div class="tr" data-step="1"><span class="rh">Waktu belajar agama</span><span>Beberapa JP per minggu untuk materi yang luas</span><span>Lebih banyak di sekolah Islam</span><span>1–2 jam sore hari, anak sudah lelah</span></div>
+    <div class="tr" data-step="2"><span class="rh">Pemakaian teknologi</span><span>Bergantung fasilitas dan kemampuan guru</span><span>Cepat: aplikasi, promosi, grup orang tua</span><span>Terbatas: umumnya grup WhatsApp</span></div>
+    <div class="tr hot" data-step="3"><span class="rh">Paling menonjol</span><span>Kelas besar dan beragam</span><span>Tuntutan orang tua, foto anak mudah tersebar</span><span>Guru sukarela kekurangan waktu</span></div>
+  </div>
+  <p class="src">Makalah Bab II D, Tabel 1 (diringkas)</p>
+</section>
+
+<!-- ================= BAGIAN 4 · SOLUSI ================= -->
+
+<section class="slide deep" data-id="s19" data-tr="shutter">
+  <svg class="net s19-net" data-w="1920" data-h="1080" data-nodes="34" data-seed="77" data-tone="deep" data-a="net"></svg>
+  <p class="kicker" data-a="scramble">BAGIAN 4</p>
+  <h1 class="display s19-t" data-a="words">Tawaran solusi: <em>tidak bisa dikerjakan</em> satu pihak saja</h1>
+  <div class="s19-who" data-a="cards" data-st="0.12">
+    <div><svg><use href="#i-grad"/></svg><b>Guru dan ustadz</b></div>
+    <div><svg><use href="#i-rule"/></svg><b>Lembaga</b></div>
+    <div><svg><use href="#i-home"/></svg><b>Orang tua</b></div>
+    <div class="all"><svg><use href="#i-link"/></svg><b>Ketiganya bersama</b></div>
+  </div>
+</section>
+
+<section class="slide" data-id="s20" data-tr="zoom">
+  <div class="dots-bg"></div>
+  <p class="kicker" data-a="up">Solusi untuk guru · 1</p>
+  <h1 class="h1 s20-title" data-a="words">Ajak anak <em>memeriksa sumber ilmu</em> agama sebelum percaya</h1>
+  <figure class="s20-ayat" data-a="mask-up">
+    <p class="arab">يٰٓأَيُّهَا الَّذِينَ اٰمَنُوْٓا اِنْ جَاۤءَكُمْ فَاسِقٌۢ بِنَبَاٍ فَتَبَيَّنُوْٓا</p>
+    <figcaption>"Jika seorang fasik datang kepadamu membawa suatu berita, maka <b>telitilah kebenarannya</b>." QS. Al-Hujurat [49]: 6</figcaption>
+  </figure>
+  <div class="s20-card" data-a="tilt"><span class="play"></span><span class="t">Potongan video ceramah yang sedang ramai</span><svg class="mag loop-mag"><use href="#i-search"/></svg></div>
+  <ol class="s20-q">
+    <li data-step="1"><span class="ck"><svg><use href="#i-check"/></svg></span>Siapa yang berbicara?</li>
+    <li data-step="2"><span class="ck"><svg><use href="#i-check"/></svg></span>Dari mana ia belajar?</li>
+    <li data-step="3"><span class="ck"><svg><use href="#i-check"/></svg></span>Apa dalilnya?</li>
+    <li data-step="4"><span class="ck"><svg><use href="#i-check"/></svg></span>Adakah ulama lain yang berpendapat berbeda?</li>
+  </ol>
+  <p class="src">Prinsip tabayyun · makalah Bab II E.1</p>
+</section>
+
+<section class="slide" data-id="s21">
+  <p class="kicker" data-a="up">Solusi untuk guru · 2</p>
+  <h1 class="h1 s21-title" data-a="words">Gamifikasi boleh dipakai, <em>asalkan ada rambunya</em></h1>
+  <p class="s21-def" data-a="up"><b>Gamifikasi</b> artinya memakai unsur game, seperti poin, level, dan leaderboard (papan peringkat), dalam kegiatan belajar.</p>
+  <div class="s21-ev">
+    <p class="lbl" data-a="up">Rangkuman banyak penelitian, dalam ukuran efek (bukan persen)</p>
+    <div class="ev"><span>Hasil belajar</span><i style="--w:98%" data-a="grow-x"></i><b class="num">0,49</b></div>
+    <div class="ev"><span>Motivasi</span><i style="--w:72%" data-a="grow-x"></i><b class="num">0,36</b></div>
+    <div class="ev"><span>Perilaku belajar</span><i style="--w:50%" data-a="grow-x"></i><b class="num">0,25</b></div>
+    <p class="note" data-a="fade">Meta-analisis Sailer dan Homner (2020)</p>
+  </div>
+  <div class="s21-risk" data-step="1">
+    <svg class="ico"><use href="#i-x"/></svg>
+    <p><b>Tapi bisa berbalik.</b> Kelas yang memakai badge dan leaderboard satu semester justru turun motivasi dan nilainya (Hanus dan Fox, 2015). Anak bisa rajin hanya karena poin.</p>
+  </div>
+  <div class="s21-rambu" data-step="2">
+    <p class="arab">إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ</p>
+    <ul>
+      <li>Poin hanya sarana. Setiap memberi poin, ingatkan niat dan pahala.</li>
+      <li>Hargai kemajuan, bukan hanya juara.</li>
+      <li>Kurangi poin untuk menyadarkan, bukan mempermalukan.</li>
+      <li>Tidak harus aplikasi: papan bintang di dinding kelas pun cukup.</li>
+    </ul>
+  </div>
+  <p class="src">Sailer dan Homner (2020) · Hanus dan Fox (2015) · Deci dkk. (1999) · HR. al-Bukhari no. 1 · makalah Bab II E.2</p>
+</section>
+
+<section class="slide" data-id="s22" data-tr="push">
+  <p class="kicker" data-a="up">Solusi untuk lembaga dan orang tua</p>
+  <h1 class="h1 s22-title" data-a="words">Lembaga menata aturan, <em>orang tua mendampingi</em> di rumah</h1>
+  <div class="s22-l" data-a="tilt">
+    <h3><svg><use href="#i-rule"/></svg>Lembaga</h3>
+    <ul>
+      <li>Buat tata tertib HP selama kegiatan belajar, termasuk di TPQ.</li>
+      <li>Minta izin tertulis orang tua sebelum mengunggah foto anak.</li>
+      <li>Pilih foto yang tidak menampakkan wajah anak dengan jelas, tanpa nama lengkap dan nilai.</li>
+    </ul>
+  </div>
+  <div class="s22-r">
+    <h3 data-a="up"><svg><use href="#i-home"/></svg>Orang tua: prinsip 3S</h3>
+    <div class="s3" data-a="cards" data-st="0.14">
+      <div><b>Screen time</b><span>batas waktu layar</span><svg><use href="#i-clock"/></svg></div>
+      <div><b>Screen zone</b><span>tempat bebas HP, seperti meja makan dan kamar tidur</span><svg><use href="#i-home"/></svg></div>
+      <div><b>Screen break</b><span>jeda dari layar</span><svg><use href="#i-hourglass"/></svg></div>
+    </div>
+    <p class="s22-tip" data-a="up"><b>Batasi sambil mendampingi:</b> sesekali menonton bersama lalu bicarakan isinya. Beri teladan, misalnya HP disimpan setelah magrib sampai selesai mengaji.</p>
+  </div>
+  <p class="src">SE Mendikdasmen No. 18/2026 · UU PDP Pasal 25 · Livingstone dan Helsper (2008) · QS. At-Tahrim [66]: 6 · makalah Bab II E.3–E.4</p>
+</section>
+
+<section class="slide mist" data-id="s23" data-tr="iris">
+  <p class="kicker" data-a="up">Solusi bersama</p>
+  <h1 class="h1 s23-title" data-a="words">Sambungkan <em>sekolah, rumah, dan TPQ</em></h1>
+  <div class="s23-tri">
+    <svg viewBox="0 0 820 700" class="tri">
+      <g class="edges" data-a="draw" data-st="0.15"><path d="M410 110 L130 590"/><path d="M130 590 L690 590"/><path d="M690 590 L410 110"/></g>
+      <g class="pul"><circle r="11"/><circle r="11"/><circle r="11"/></g>
+    </svg>
+    <div class="nd n1" data-a="pop"><svg><use href="#i-school"/></svg><b>Guru PAI</b><span>tanyakan tempat anak mengaji</span></div>
+    <div class="nd n2" data-a="pop"><svg><use href="#i-home"/></svg><b>Orang tua</b><span>menjadi penghubung</span></div>
+    <div class="nd n3" data-a="pop"><svg><use href="#i-mosque"/></svg><b>Ustadz TPQ</b><span>kabarkan kemajuan bacaan</span></div>
+    <div class="kid" data-a="zoom"><svg><use href="#i-user"/></svg>Anak yang sama</div>
+  </div>
+  <div class="s23-side">
+    <p class="lead" data-a="up">Guru PAI dan ustadz TPQ sering tidak saling kenal, padahal <b>mengajar anak yang sama</b>.</p>
+    <p class="body" data-a="up">Grup WhatsApp yang sudah ada cukup untuk memulai, asalkan dipakai dengan adab dan menjaga data anak.</p>
+    <figure class="h" data-a="mask-up"><p class="arab">كُلُّكُمْ رَاعٍ وَكُلُّكُمْ مَسْئُولٌ عَنْ رَعِيَّتِهِ</p><figcaption>"Setiap kalian adalah pemimpin dan akan dimintai pertanggungjawaban atas yang dipimpinnya." HR. al-Bukhari no. 893 dan Muslim no. 1829</figcaption></figure>
+  </div>
+  <p class="src">Epstein (1995), Phi Delta Kappan · makalah Bab II E.5</p>
+</section>
+
+<!-- ================= PENUTUP ================= -->
+
+<section class="slide" data-id="s24">
+  <div class="orb" style="width:800px;height:800px;right:-300px;top:-300px;opacity:.35"></div>
+  <p class="kicker" data-a="up">Kesimpulan</p>
+  <h1 class="h1" data-a="words">Empat hal yang <em>kami bawa pulang</em></h1>
+  <ol class="s24-l" data-a="cards" data-st="0.14">
+    <li><span class="n">1</span><p>Ekosistem digital adalah perangkat, platform, algoritma, dan data yang <b>membentuk siklus</b> dan membuat anak betah di depan layar.</p></li>
+    <li><span class="n">2</span><p>Ada <b>lima tantangan</b>: perhatian, sumber ilmu agama, adab, data anak, serta akses dan kemampuan.</p></li>
+    <li><span class="n">3</span><p>Wajahnya berbeda: sekolah negeri kekurangan <b>waktu</b>, sekolah swasta menghadapi <b>tuntutan dan risiko data</b>, TPQ kekurangan <b>tenaga dan waktu</b>.</p></li>
+    <li><span class="n">4</span><p>Solusinya dikerjakan bersama: <b>guru, lembaga, orang tua</b>, dan jalur komunikasi di antara ketiganya.</p></li>
+  </ol>
+  <p class="src">Makalah Bab III A</p>
+</section>
+
+<section class="slide deep" data-id="s25" data-chrome="cover" data-tr="shutter">
+  <canvas class="end-net" width="1920" height="1080"></canvas>
+  <p class="kicker s25-k" data-a="scramble">MARI BERDISKUSI</p>
+  <ol class="s25-q" data-a="cards" data-st="0.18">
+    <li><span>1</span>Dari lima tantangan tadi, mana yang paling terasa di tempat Bapak dan Ibu mengajar?</li>
+    <li><span>2</span>Layakkah poin dan leaderboard dipakai dalam belajar agama, atau justru berisiko menggeser niat anak?</li>
+    <li><span>3</span>Bagaimana cara paling realistis menyambungkan guru PAI, ustadz TPQ, dan orang tua?</li>
+  </ol>
+  <div class="s25-foot">
+    <p class="ty" data-a="chars">Terima kasih</p>
+    <div class="names" data-a="stagger"><span>Aldo Pratama Joani <i class="mono">2686130003</i></span><span>Paisal <i class="mono">2686130006</i></span></div>
+  </div>
+</section>
+
+<!-- SLIDES-END -->
+
+<div id="chrome"><div class="chap"></div><div class="count"></div><div class="bar"></div></div>
+<div id="edge"></div>
+<div id="ring"></div>
+<div id="shutter"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+</div>
+
+<div id="blackout"></div>
+<div id="jump"></div>
+<div id="overview"><div class="ov-head">Semua slide <span>Klik untuk lompat · Esc untuk menutup</span></div><div class="ov-grid"></div></div>
+<div id="help"><kbd>→</kbd> lanjut <kbd>←</kbd> kembali <kbd>F</kbd> layar penuh <kbd>P</kbd> presenter <kbd>O</kbd> semua slide <kbd>B</kbd> layar hitam <kbd>M</kbd> animasi <kbd>E</kbd> edit teks <kbd>12</kbd>+<kbd>Enter</kbd> lompat</div>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/SplitText.min.js"></script>
+<script src="assets/vendor/DrawSVGPlugin.min.js"></script>
+<script src="assets/vendor/ScrambleTextPlugin.min.js"></script>
+<script src="assets/vendor/MotionPathPlugin.min.js"></script>
+<script src="assets/vendor/CustomEase.min.js"></script>
+<script src="assets/js/deck-data.js"></script>
+<script src="assets/js/edits.js"></script>
+<script src="assets/js/slide-fx.js"></script>
+<script src="assets/js/editor.js"></script>
+<script src="assets/js/deck.js"></script>
+</body>
+</html>
