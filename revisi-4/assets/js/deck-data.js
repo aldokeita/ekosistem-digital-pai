@@ -161,7 +161,7 @@ window.DECK = {
       purpose: "Menunjukkan kesenjangan akses internet dan kemampuan digital pendidik.",
       script: "Tantangan kelima adalah kesenjangan. Menurut BPS, pada tahun 2025 sebanyak 82,72 persen penduduk perkotaan sudah mengakses internet, sedangkan di perdesaan baru 70,14 persen. Kesenjangan juga terjadi pada gurunya. Sebagian guru sudah terbiasa membuat kuis online dan konten belajar. Sebagian lain, terutama pengajar senior di TPQ, masih belajar memakai aplikasi dasar. Akibatnya, tidak jarang anak lebih mahir memakai teknologi daripada gurunya. Ini bukan untuk menyalahkan guru, tetapi supaya kita sadar bahwa pelatihan guru juga bagian dari jawabannya.",
       cue: "Bandingkan dua batang teratas dengan gerakan tangan.",
-      transition: "Itulah lima tantangan bersama. Sekarang kita lihat wajahnya di masing-masing tempat.",
+      transition: "Itulah lima tantangan bersama. Sekarang kita lihat bentuknya di masing-masing tempat.",
       caution: "Data BPS 2025 dikutip melalui GoodStats. Kesenjangan kemampuan guru adalah pengamatan umum dalam makalah, bukan hasil survei.",
       source: "Makalah Bab II C.5. BPS, Statistik Telekomunikasi Indonesia 2025 (dikutip GoodStats, 1 September 2026)."
     },
@@ -197,7 +197,7 @@ window.DECK = {
     },
     {
       id: "s18", chapter: 3, speaker: "Aldo", sec: 50, steps: 3,
-      title: "Satu ekosistem, tiga wajah tantangan",
+      title: "Satu ekosistem, tantangannya berbeda di tiap tempat",
       purpose: "Merangkum perbedaan ketiga lembaga dalam satu tabel.",
       script: "Inilah ringkasannya. Dari sisi waktu belajar agama, sekolah negeri hanya punya beberapa jam pelajaran, sekolah Islam lebih banyak, dan TPQ satu sampai dua jam di sore hari. Dari sisi pemakaian teknologi, sekolah negeri bergantung pada fasilitas dan kemampuan guru, sekolah swasta paling cepat, terutama untuk promosi di media sosial, dan TPQ umumnya baru memakai grup WhatsApp. Yang paling menonjol, sekolah negeri menghadapi kelas yang besar dan beragam, sekolah swasta menghadapi persaingan citra sampai gurunya ikut membuat konten promosi, dan TPQ menghadapi guru sukarela yang kekurangan waktu.",
       cue: "Klik tiga kali untuk memunculkan baris satu per satu. Baris ketiga berwarna biru.",
@@ -259,7 +259,7 @@ window.DECK = {
       id: "s24", chapter: 5, speaker: "Aldo", sec: 50,
       title: "Kesimpulan",
       purpose: "Menyampaikan jawaban singkat atas keempat rumusan masalah.",
-      script: "Sebagai kesimpulan, ada empat hal. Pertama, ekosistem digital adalah perangkat, platform, algoritma, dan data yang membentuk siklus dan membuat anak betah di depan layar. Kedua, ada lima tantangan bersama, yaitu perhatian, sumber ilmu agama, adab, data anak, serta akses dan kemampuan. Ketiga, wajah tantangannya berbeda. Sekolah negeri kekurangan waktu, sekolah swasta menghadapi persaingan citra dan tuntutan hasil yang mudah dipamerkan, dan TPQ kekurangan tenaga dan waktu. Keempat, solusinya harus dikerjakan bersama oleh guru, lembaga, dan orang tua, dengan jalur komunikasi di antara ketiganya.",
+      script: "Sebagai kesimpulan, ada empat hal. Pertama, ekosistem digital adalah perangkat, platform, algoritma, dan data yang membentuk siklus dan membuat anak betah di depan layar. Kedua, ada lima tantangan bersama, yaitu perhatian, sumber ilmu agama, adab, data anak, serta akses dan kemampuan. Ketiga, tantangan di tiap tempat berbeda. Sekolah negeri kekurangan waktu, sekolah swasta menghadapi persaingan citra dan tuntutan hasil yang mudah dipamerkan, dan TPQ kekurangan tenaga dan waktu. Keempat, solusinya harus dikerjakan bersama oleh guru, lembaga, dan orang tua, dengan jalur komunikasi di antara ketiganya.",
       cue: "Sampaikan dengan tempo sedikit lebih lambat. Ini bagian yang paling mungkin diingat audiens.",
       transition: "Kami ingin mendengar pendapat Bapak dan Ibu.",
       caution: "",
