@@ -47,12 +47,14 @@
 
   /* ---------- skala ---------- */
   // insets: ruang untuk toolbar dan panel catatan saat mode edit
-  let insets = { top: 0, bottom: 0 };
+  let insets = { top: 0, bottom: 0, left: 0, right: 0 };
+  let noteIns = { top: 0, bottom: 0, left: 0, right: 0 }; // ruang panel naskah
   let editing = false;
   function fit() {
-    const vw = innerWidth, vh = innerHeight - insets.top - insets.bottom;
+    const I = { top: insets.top + noteIns.top, bottom: insets.bottom + noteIns.bottom, left: (insets.left || 0) + noteIns.left, right: (insets.right || 0) + noteIns.right };
+    const vw = innerWidth - I.left - I.right, vh = innerHeight - I.top - I.bottom;
     const s = Math.min(vw / W, vh / H);
-    stage.style.transform = `translate(${(vw - W * s) / 2}px, ${insets.top + (vh - H * s) / 2}px) scale(${s})`;
+    stage.style.transform = `translate(${I.left + (vw - W * s) / 2}px, ${I.top + (vh - H * s) / 2}px) scale(${s})`;
   }
 
   /* ---------- motif jaringan (identitas visual) ---------- */
@@ -502,6 +504,7 @@
     return { type: 'state', index, step, steps: maxStep(slides[index]), total: slides.length, id: slides[index].dataset.id, black: blackout.classList.contains('on') };
   }
   function broadcast() {
+    if (typeof updateNotes === 'function') updateNotes();
     if (MODE !== 'show') return;
     const m = stateMsg();
     try { if (pres && !pres.closed) pres.postMessage(m, '*'); } catch (e) { /* jendela tertutup */ }
@@ -628,6 +631,7 @@
       case 'p': case 'P': openPresenter(); break;
       case 'b': case 'B': case '.': toggleBlack(); break;
       case 'h': case 'H': case '?': showHelp(6000); break;
+      case 's': case 'S': toggleNotes(); break;
       case 'm': case 'M':
         RM = !RM;
         try { localStorage.setItem('ld4-motion', RM ? 'off' : 'on'); } catch (err) { /* abaikan */ }
@@ -677,6 +681,7 @@
     btn('<svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>', 'Kembali', prev);
     tbar.appendChild(Object.assign(document.createElement('span'), { className: 'tc' }));
     btn('<svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>', 'Lanjut', next);
+    btn('<svg viewBox="0 0 24 24"><path d="M5 4h10l4 4v12H5z"/><path d="M8.5 10h7M8.5 13.5h7M8.5 17h4"/></svg>', 'Naskah', toggleNotes);
     btn('<svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>', 'Semua slide', openOverview);
     if (canFull) btn('<svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>', 'Layar penuh', toggleFull);
     document.body.appendChild(tbar);
@@ -686,6 +691,79 @@
   function updateTbar() {
     if (!tbar) return;
     tbar.querySelector('.tc').textContent = (index + 1) + ' / ' + slides.length;
+  }
+
+  /* ---------- Panel naskah di layar yang sama (untuk iPad atau satu layar) ----------
+     Slide mengecil ke kiri (lanskap) atau ke atas (potret); panel berisi naskah,
+     cue, transisi ke slide berikutnya, catatan hati-hati, dan timer slide. */
+  let notes = null, noteOn = false, noteFs = 1, slideT0 = Date.now(), noteTick = 0;
+  try { noteFs = parseFloat(localStorage.getItem('ld4-notes-fs')) || 1; } catch (e) { /* abaikan */ }
+  const escH = (t) => String(t || '').replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+  const mmss = (sec) => Math.floor(sec / 60) + ':' + String(Math.floor(sec % 60)).padStart(2, '0');
+  function buildNotes() {
+    notes = document.createElement('aside');
+    notes.id = 'notes';
+    notes.innerHTML = '<div class="nt-head"><span class="nt-no"></span><span class="nt-sp"></span><span class="nt-time"></span>'
+      + '<button type="button" data-a="-" aria-label="Perkecil tulisan">A−</button><button type="button" data-a="+" aria-label="Perbesar tulisan">A+</button>'
+      + '<button type="button" data-a="x" aria-label="Tutup naskah">Tutup</button></div>'
+      + '<div class="nt-body"><h2 class="nt-title"></h2><p class="nt-step"></p><div class="nt-script"></div>'
+      + '<div class="nt-box nt-tr"><b>Transisi ke slide berikutnya</b><p></p></div>'
+      + '<div class="nt-box nt-cue"><b>Cue</b><p></p></div>'
+      + '<div class="nt-box nt-ca"><b>Hati-hati</b><p></p></div>'
+      + '<p class="nt-next"></p></div>';
+    notes.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const b = e.target.closest('button'); if (!b) return;
+      if (b.dataset.a === 'x') toggleNotes(false);
+      else { noteFs = Math.max(0.8, Math.min(1.8, noteFs + (b.dataset.a === '+' ? 0.1 : -0.1))); try { localStorage.setItem('ld4-notes-fs', noteFs); } catch (err) { /* abaikan */ } notes.style.setProperty('--nfs', noteFs); }
+    });
+    ['touchstart', 'touchend'].forEach((t) => notes.addEventListener(t, (e) => e.stopPropagation(), { passive: true }));
+    notes.style.setProperty('--nfs', noteFs);
+    document.body.appendChild(notes);
+  }
+  let lastNoteIdx = -1;
+  function updateNotes() {
+    if (!notes || !noteOn) return;
+    const sl = slides[index], m = metaOf(sl), nx = slides[index + 1] ? metaOf(slides[index + 1]) : null;
+    if (lastNoteIdx !== index) { slideT0 = Date.now(); lastNoteIdx = index; notes.querySelector('.nt-body').scrollTop = 0; }
+    notes.querySelector('.nt-no').textContent = (index + 1) + ' / ' + slides.length;
+    notes.querySelector('.nt-sp').textContent = m.speaker || '';
+    notes.querySelector('.nt-title').textContent = m.title || '';
+    const ms = maxStep(sl);
+    notes.querySelector('.nt-step').textContent = ms ? 'Langkah klik ' + step + ' dari ' + ms : '';
+    notes.querySelector('.nt-script').innerHTML = '<p>' + escH(m.script) + '</p>';
+    const box = (cls, txt) => { const el = notes.querySelector(cls); el.hidden = !txt; el.querySelector('p').textContent = txt || ''; };
+    box('.nt-tr', m.transition); box('.nt-cue', m.cue); box('.nt-ca', m.caution);
+    notes.querySelector('.nt-next').textContent = nx ? 'Berikutnya: ' + (index + 2) + '. ' + nx.title + (nx.speaker && nx.speaker !== m.speaker ? ' · giliran ' + nx.speaker : '') : 'Ini slide terakhir.';
+    tickNotes();
+  }
+  function tickNotes() {
+    if (!notes || !noteOn) return;
+    const m = metaOf(slides[index]), t = (Date.now() - slideT0) / 1000, el = notes.querySelector('.nt-time');
+    el.textContent = mmss(t) + ' / ' + mmss(m.sec || 0);
+    el.classList.toggle('over', !!m.sec && t > m.sec);
+  }
+  function layoutNotes() {
+    const land = innerWidth >= innerHeight;
+    noteIns = { top: 0, bottom: 0, left: 0, right: 0 };
+    if (noteOn) { if (land) noteIns.right = Math.round(Math.min(560, Math.max(320, innerWidth * 0.36))); else noteIns.bottom = Math.round(innerHeight * 0.46); }
+    document.body.classList.toggle('notes-land', noteOn && land);
+    document.body.classList.toggle('notes-port', noteOn && !land);
+    if (notes) { notes.style.width = land ? noteIns.right + 'px' : ''; notes.style.height = land ? '' : noteIns.bottom + 'px'; }
+    document.body.style.setProperty('--nw', noteIns.right + 'px');
+    document.body.style.setProperty('--nh', noteIns.bottom + 'px');
+    fit();
+  }
+  function toggleNotes(v) {
+    if (!notes) buildNotes();
+    noteOn = typeof v === 'boolean' ? v : !noteOn;
+    document.body.classList.toggle('notes-on', noteOn);
+    try { localStorage.setItem('ld4-notes', noteOn ? 'on' : 'off'); } catch (e) { /* abaikan */ }
+    clearInterval(noteTick);
+    if (noteOn) noteTick = setInterval(tickNotes, 1000);
+    lastNoteIdx = -1;
+    layoutNotes();
+    updateNotes();
   }
 
   function initInput() {
@@ -708,7 +786,9 @@
     });
     blackout.addEventListener('click', () => toggleBlack());
     if (touchy) { buildTbar(); document.body.classList.add('touch'); addEventListener('touchstart', showTbar, { passive: true }); }
-    addEventListener('orientationchange', () => setTimeout(fit, 250));
+    addEventListener('orientationchange', () => setTimeout(() => { if (noteOn) layoutNotes(); else fit(); }, 250));
+    addEventListener('resize', () => { if (noteOn) layoutNotes(); });
+    try { if (localStorage.getItem('ld4-notes') === 'on' || params.has('naskah')) toggleNotes(true); } catch (e) { if (params.has('naskah')) toggleNotes(true); }
     let idleT = 0;
     addEventListener('mousemove', () => {
       document.body.classList.remove('idle');
@@ -747,7 +827,8 @@
       get editing() { return editing; },
       setEditing(v, ins) {
         editing = !!v;
-        insets = ins || { top: 0, bottom: 0 };
+        if (editing && noteOn) toggleNotes(false);
+        insets = Object.assign({ top: 0, bottom: 0, left: 0, right: 0 }, ins || {});
         document.body.classList.remove('idle');
         fit();
       },
