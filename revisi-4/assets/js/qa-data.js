@@ -167,10 +167,17 @@ window.QA = {
     },
     {
       sec: "C", who: "Aldo", slides: ["s16"],
-      q: "Bukankah mengirim foto hafalan ke orang tua itu bagus untuk komunikasi?",
-      short: "Bagus, selama dikirim ke orang tua anak itu sendiri dan dengan izin. Yang kami waspadai adalah foto dan video yang diunggah ke media sosial publik, apalagi dengan nama lengkap dan nilai. Ada juga risiko halus, yaitu ukuran keberhasilan bergeser ke hal yang bisa difoto saja.",
-      more: "Kejujuran dan keikhlasan tidak bisa difoto, tetapi justru itu inti pendidikan agama.",
+      q: "Apa salahnya sekolah memamerkan prestasi hafalan di media sosial?",
+      short: "Tidak salah. Prestasi layak disyukuri dan bisa menyemangati anak lain. Yang kami waspadai adalah ketika ukuran keberhasilan bergeser ke hal yang bisa dipamerkan saja, seperti jumlah juz, sementara mutu bacaan, kejujuran, dan adab kurang diperhatikan karena tidak tampak di layar.",
+      more: "Beban guru juga perlu dipikirkan. Kalau guru PAI harus membuat konten promosi setiap minggu, waktu untuk menyiapkan pelajaran ikut berkurang.",
       basis: "Makalah Bab II D."
+    },
+    {
+      sec: "C", who: "Aldo", slides: ["s16", "s13"],
+      q: "Orang tua di Indonesia justru senang anaknya tampil di media sosial. Kenapa privasi masih dibahas?",
+      short: "Betul, banyak orang tua senang anaknya tampil, dan karena itu kami tidak menjadikan privasi sebagai tantangan utama sekolah swasta. Privasi tetap kami bahas secara umum di slide data anak, karena UU Pelindungan Data Pribadi tetap berlaku dan meminta izin orang tua tidak sulit dilakukan.",
+      more: "Kerugian dari data yang tersebar memang jarang terjadi, tetapi kalau terjadi akibatnya bisa berat dan sulit ditarik kembali. Meminta izin adalah langkah murah untuk berjaga-jaga.",
+      basis: "Makalah Bab II C.4 dan E.3; UU 27/2022 Pasal 25."
     },
     {
       sec: "C", who: "Aldo", slides: ["s17"],
